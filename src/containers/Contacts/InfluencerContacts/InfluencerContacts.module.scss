@@ -1,0 +1,218 @@
+@import "../../../variable.module.scss";
+.contactsContainer {
+  max-width: 1250px;
+  margin: auto;
+}
+.contactsHeading {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 1em;
+  span {
+    font-family: "Poppins", sans-serif;
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.contactsHeadingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  button {
+    font-size: 15px;
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  button:focus {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 16px;
+    outline: none;
+  }
+}
+
+.contactsBanner {
+  max-height: 167px;
+  max-width: auto;
+  height: 167px;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #b485c5;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  margin-bottom: 30px;
+  // padding: 50px 53px 50px 88px;
+
+  h1 {
+    font-family: Poppins;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 53px;
+    margin: 0px;
+  }
+  .firstp {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 53px;
+  }
+  .secondp {
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+}
+.tableWrap {
+  tr:nth-child(even) > td {
+    padding: 0px;
+    margin-right: 10px !important;
+  }
+  tr:nth-child(even) > td:first-child {
+    padding-left: 10px !important;
+  }
+  tr:nth-child(even) > td:last-child {
+    padding-right: 10px !important;
+  }
+}
+
+.searchContainer {
+  margin: 10px 0px;
+}
+.firstTableCell {
+  display: flex !important;
+  align-items: center !important;
+  margin-left: 25px;
+}
+.avatar {
+  height: 46px;
+  width: 46px;
+  display: flex;
+}
+.avatarName {
+  display: flex;
+  margin-left: 20px !important;
+  color: #000000 !important;
+  font-family: Poppins !important;
+  font-size: 16px !important;
+  letter-spacing: 0 !important;
+  line-height: 25px !important;
+}
+
+.popOver {
+  padding: 20px 33px;
+
+  .editDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    p {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+
+  .deleteDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+    svg {
+      stroke: #db7474;
+    }
+    p {
+      color: #db7474;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+}
+.noCampaignYet {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+.noCampaignYetHelper {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .contactsHeading {
+      > * {
+        &:not(:last-child) {
+          margin-right: 25px !important;
+        }
+      }
+    }
+    .popOver .editDiv {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+    .popOver .deleteDiv {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+}
+.learnMore {
+  color: #ffffff !important;
+  text-decoration-line: underline !important;
+}
+.contactContainer {
+  padding-top: 15% !important;
+}

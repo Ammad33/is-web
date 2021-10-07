@@ -1,0 +1,191 @@
+@import "../../variable.module.scss";
+.campaignsContainer {
+  max-width: 1250px;
+  margin: auto;
+}
+.CampaignHeading {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 1em;
+  span {
+    font-family: "Poppins", sans-serif;
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.CampaignHeadingButton {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 40px;
+  button {
+    background: transparent;
+    border: none !important;
+    font-size: 17px;
+    line-height: 26px;
+    padding: 5px 16px;
+    font-family: "Poppins Regular", sans-serif;
+    cursor: pointer;
+  }
+  button:active,
+  :focus {
+    outline: none;
+  }
+}
+
+.allActive {
+  background-color: $dark1 !important;
+  border: none !important;
+  color: $white;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  outline: none;
+  font-family: "Poppins Light", sans-serif;
+}
+
+.inviteActive {
+  background-color: $influencerInvite !important;
+  border: none !important;
+  color: $white;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  outline: none;
+  font-family: "Poppins Light", sans-serif;
+}
+
+.liveActive {
+  background-color: $influencerLive !important;
+  border: none !important;
+  color: $white;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  outline: none;
+  font-family: "Poppins Light", sans-serif;
+}
+.pendingActive {
+  background-color: $influencerPending !important;
+  border: none !important;
+  color: $white;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  outline: none;
+  font-family: "Poppins Light", sans-serif;
+}
+
+.closedActive {
+  background-color: $influencerClosed !important;
+  border: none !important;
+  color: $white;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  outline: none;
+  font-family: "Poppins Light", sans-serif;
+}
+
+.declinedActive {
+  background-color: $influencerDeclined !important;
+  border: none !important;
+  color: $white;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 12px;
+  outline: none;
+  font-family: "Poppins Light", sans-serif;
+}
+
+.gridItem {
+  min-width: 395px;
+  max-width: 395px;
+  min-height: 160px;
+  max-height: 160px;
+  height: 160px;
+  padding: 0px !important;
+  margin: 12px !important;
+}
+
+.CampaignHeadingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  button {
+    font-size: 15px;
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  button:focus {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 16px;
+    outline: none;
+  }
+}
+.noCampaignYet {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 42px;
+}
+.noCampaignYetHelper {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 19px;
+  font-weight: 300;
+  letter-spacing: 0;
+  line-height: 20px;
+  text-align: center;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .CampaignHeading {
+      > * {
+        &:not(:last-child) {
+          margin-right: 25px !important;
+        }
+      }
+    }
+    .CampaignHeadingButton {
+      > * {
+        &:not(:last-child) {
+          margin-right: 50px !important;
+        }
+      }
+    }
+  }
+}
+.campaignContainer {
+  padding-top: 15% !important;
+}

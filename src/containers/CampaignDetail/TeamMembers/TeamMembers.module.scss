@@ -1,0 +1,64 @@
+@import "../../../variable.module.scss";
+.mainContainer {
+  height: 454px;
+  width: 391px;
+  border-radius: 10px;
+  background-color: $white;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 32px 41px 20px 35px;
+  position: relative;
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 16px;
+    svg {
+      cursor: pointer;
+    }
+    h3 {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 34px;
+    }
+  }
+
+  .membersContainer {
+    .memberItem {
+      display: flex;
+      align-items: center;
+      padding: 10px 0px;
+      gap: 10px;
+      &:last-child {
+        margin-bottom: 30px;
+      }
+    }
+    .noTeamMember {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .membersContainer {
+      .memberItem {
+        > * {
+          &:not(:last-child) {
+            margin-right: 10px !important;
+          }
+        }
+      }
+    }
+  }
+}
+.teamMemberStyle {
+  position: absolute !important;
+  bottom: 20px !important;
+}

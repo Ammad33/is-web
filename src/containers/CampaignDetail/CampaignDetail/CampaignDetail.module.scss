@@ -1,0 +1,70 @@
+@import "../../../variable.module.scss";
+.campaignContainer {
+  &.withChildHeight {
+    min-height: 454px;
+  }
+  &.withNoChildHeight {
+    height: 412px;
+  }
+  width: 391px;
+  border-radius: 10px;
+  background-color: $white;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 32px 41px 20px 35px;
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    svg {
+      cursor: pointer;
+    }
+    h1 {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 34px;
+    }
+  }
+
+  .detailSubContent {
+    word-break: break-word;
+    margin-top: 24px;
+    h6 {
+      letter-spacing: 0px;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 500;
+      color: $dark1;
+      margin: 0px;
+      padding: 0px;
+    }
+    p {
+      margin: 0px;
+      padding: 0px;
+      font: normal normal normal 14px/21px Poppins;
+      letter-spacing: 0px;
+      color: $dark1;
+    }
+  }
+
+  .dateContainer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-direction: row;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .dateContainer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 15px !important;
+        }
+      }
+    }
+  }
+}

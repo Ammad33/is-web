@@ -1,0 +1,52 @@
+@import "../../../variable.module.scss";
+
+.NotifcationInfoContainer {
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid $dark3;
+
+  h1 {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 34px;
+  }
+}
+
+.personAvatar {
+  width: 59px;
+  height: 59px;
+}
+
+.notificationContent {
+  margin-left: 10px;
+  .notificationTime {
+    color: #939393;
+    font-family: Poppins;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 18px;
+    margin-left: 12px;
+  }
+  .BrandName {
+    margin-top: 1px;
+    width: 100%;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 21px;
+  }
+
+  .BrandDescription {
+    margin-top: 5px;
+    width: 100%;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 11px;
+    letter-spacing: 0;
+    line-height: 17px;
+  }
+}

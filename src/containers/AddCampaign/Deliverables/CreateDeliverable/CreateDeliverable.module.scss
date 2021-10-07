@@ -1,0 +1,99 @@
+@import "../../../../variable.module.scss";
+
+.optionsItem {
+  svg {
+    color: $primary1;
+    cursor: pointer;
+    height: 31px !important;
+    width: 31px !important;
+  }
+
+  .displayNone {
+    display: none;
+  }
+
+  .cursorPointer {
+    cursor: pointer;
+    stroke-width: 1px;
+  }
+
+  .svgDisabled {
+    color: #939393;
+    cursor: pointer;
+    margin-top: 4px;
+    height: 31px !important;
+    width: 31px !important;
+    stroke-width: 1px !important;
+  }
+}
+
+.dropDownCustomizeSvg {
+  svg {
+    margin-left: -36px;
+    margin-right: 20px;
+  }
+}
+.disablePointer {
+  svg {
+    cursor: default !important;
+    margin-left: -36px;
+    margin-right: 20px;
+  }
+}
+.inputfield:hover fieldset {
+  border-color: rgb(189, 189, 189) !important;
+}
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marginTop {
+  margin-top: 16px !important;
+}
+
+.disabled {
+  color: #717171;
+}
+
+.headingColor {
+  color: $dark1;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 16px;
+}
+
+.heading {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  line-height: 25px;
+  margin-top: 16px;
+}
+
+.marginbottom {
+  margin-bottom: 25px !important;
+}
+
+.marginbottomSelect {
+  margin-bottom: 9px !important;
+}
+
+.errorText {
+  color: red;
+}
+
+.errorMessage {
+  color: #d55656;
+  margin-left: 0 !important;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 21px;
+}

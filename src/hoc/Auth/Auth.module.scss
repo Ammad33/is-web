@@ -1,0 +1,38 @@
+@import "./../../variable.module.scss";
+
+.authContainer {
+  display: flex;
+
+  .logoAndComponent {
+    width: 50%;
+    margin-top: 0px;
+    height: 1080px;
+
+    .logoDiv {
+      width: 184px;
+      padding: 40px 40px 0 40px;
+      height: 81px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .formDiv {
+      margin: 73px 0px 246px 245px;
+    }
+  }
+
+  .sidebar {
+    width: 50%;
+    display: flex;
+    position: relative;
+    min-height: 100vh; //min-height: -webkit-fill-available;
+
+    img {
+      width: 933px;
+      height: 1080px;
+      align-self: center;
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,81 @@
+.popOverContainer {
+  padding: 25px;
+
+  .popOverHeader {
+    h6 {
+      margin: 0px;
+      color: #000000;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+
+    p {
+      margin-top: 8px;
+      color: #000000;
+      font-family: Poppins;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 18px;
+    }
+  }
+
+  .textField {
+    margin-top: 20px;
+
+    div input {
+      height: 12px !important;
+    }
+
+    & > label {
+      color: #7e7e7e !important;
+      line-height: 13px !important;
+    }
+  }
+
+  .commentField {
+    margin-top: 30px;
+
+    div input {
+      height: 140px !important;
+    }
+
+    & > label {
+      color: #7e7e7e !important;
+      line-height: 20px !important;
+    }
+  }
+
+  .buttonContainer {
+    display: flex;
+    justify-content: flex-end;
+    .submit {
+      margin-top: 20px;
+      height: 31px;
+      width: 105px;
+      border-radius: 100px;
+      background-color: #000000;
+
+      p {
+        color: #ffffff;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 15px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+.brandDropDown {
+  margin-right: 5px !important;
+  display: flex;
+}
+
+.brandDropDownSVG {
+  margin-left: 5px;
+}

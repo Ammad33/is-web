@@ -1,0 +1,196 @@
+@import "./../../../variable.module.scss";
+.mainContainer {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  padding-top: 30px;
+  .campaignBasicInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .campaignStatus {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .micrositeContainer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 60px;
+        width: 358px;
+        background-color: #3481ef;
+        border-right: none !important;
+        border-radius: 10px;
+        padding: 0px 20px;
+        color: $white;
+        font-weight: 500;
+        cursor: pointer;
+        .linkIconAndName {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+      }
+
+      .promotion {
+        color: $dark1;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 30px;
+        margin: 0px;
+        padding: 0px;
+      }
+      .liveCampaign {
+        height: 34px;
+        width: 70px;
+        border-radius: 100px;
+        background-color: $brandLive;
+        color: $white;
+        font-family: Poppins;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 25px;
+      }
+      .influencerSocial {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      > div:not(:last-child) {
+        border-right: 1px solid #cccccc;
+        padding-right: 20px;
+      }
+    }
+  }
+  .contentContainer {
+    .flexContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      .col2Width {
+        width: 812px;
+        box-shadow: 0px 6px 50px #0000001a !important;
+      }
+      .col3Width {
+        width: 391px;
+        box-shadow: 0px 6px 50px #0000001a !important;
+      }
+    }
+  }
+}
+
+.popOver {
+  width: 284px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  padding: 35px 28px;
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    p {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+  :last-child {
+    margin-bottom: 0px;
+  }
+}
+.CampaignHeading {
+  display: flex;
+  flex-direction: row;
+  gap: 21.5px;
+  align-items: center;
+  margin-bottom: 51px;
+  margin-top: 43px;
+  span {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 50px;
+    cursor: pointer;
+  }
+}
+
+.x {
+  width: 100%;
+  padding: 27px 27px 27px 27px;
+  svg {
+    float: right;
+    height: 27px;
+    width: 27px;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .mainContainer {
+      > * {
+        &:not(:last-child) {
+          margin-bottom: 30px !important;
+        }
+      }
+      .CampaignHeading {
+        margin-bottom: 51px !important;
+      }
+    }
+    .campaignStatus {
+      > * {
+        &:not(:last-child) {
+          margin-right: 20px !important;
+        }
+      }
+    }
+    .linkIconAndName {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+    .influencerSocial {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+    .popOver div {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+    .CampaignHeading {
+      > * {
+        &:not(:last-child) {
+          margin-right: 21.5px !important;
+        }
+      }
+    }
+  }
+}
+.displayNone {
+  display: none !important;
+}
+.micrositeStyle {
+  text-decoration: underline;
+}

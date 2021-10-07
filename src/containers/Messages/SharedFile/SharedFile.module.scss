@@ -1,0 +1,123 @@
+@import "./../../../variable.module.scss";
+
+.sharedFileContainer {
+  margin-top: 47px;
+
+  .sharedFileContent {
+    display: flex;
+    align-items: center;
+
+    button {
+      height: 36px;
+      // width: 162px;
+      background: transparent;
+      border: none !important;
+      font-size: 17px;
+      line-height: 26px;
+      font-family: "Poppins Regular", sans-serif;
+      cursor: pointer;
+      display: flex;
+      // padding: 12px 0px 12px 20px !important;
+      align-items: center;
+    }
+
+    .active {
+      background-color: #000000 !important;
+      border: none !important;
+      color: #ffffff;
+      padding: 8px 16px;
+      border-radius: 100px;
+      font-size: 17px;
+      outline: none;
+      font-family: "Poppins Light", sans-serif;
+    }
+
+    .other {
+      background-color: #000000 !important;
+      border: none !important;
+      color: #ffffff;
+      border-radius: 100px;
+      font-size: 17px !important;
+      outline: none;
+      font-family: "Poppins Light", sans-serif;
+    }
+
+    button:focus {
+      color: #ffffff;
+      font-family: Poppins;
+      font-size: 17px;
+      letter-spacing: 0;
+      line-height: 26px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      background: #000000;
+      border: none;
+      border-radius: 100px;
+      outline: none;
+    }
+
+    p {
+      margin-left: 15px;
+      color: #000000;
+      font-family: Poppins;
+      font-size: 17px;
+      letter-spacing: 0;
+      line-height: 26px;
+    }
+  }
+
+  .imagesContainer {
+    margin-top: 40px;
+  }
+
+  .sharefiles {
+    height: 166px;
+    width: 166px;
+    margin-left: 10px;
+  }
+}
+
+.otherFiles {
+  margin-top: 22px;
+  margin-left: 20px;
+  .fileSize {
+    margin-top: 28px;
+    color: #939393;
+    font-family: Poppins;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 18px;
+    text-align: right;
+  }
+  .downloadIcon {
+    margin: 20px 0px 0px 15px;
+  }
+}
+.dialogTitleContainer {
+  display: flex;
+}
+
+.dialogTitle {
+  svg {
+    display: flex;
+  }
+  p {
+    display: flex !important;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+  span {
+    color: #939393;
+    font-family: Poppins;
+    font-size: 12px;
+    letter-spacing: 0;
+    line-height: 18px;
+  }
+}
+.mediaContainer {
+  justify-content: center !important;
+}

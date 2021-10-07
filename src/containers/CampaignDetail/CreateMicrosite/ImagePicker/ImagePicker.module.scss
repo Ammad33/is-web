@@ -1,0 +1,84 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  margin-bottom: 31px;
+  .firstContainer {
+    div {
+      display: flex;
+      flex-direction: row;
+      gap: 12px;
+      margin-bottom: 25px;
+      h6 {
+        height: 23px;
+        width: 111px;
+        color: #000000;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.24px;
+        line-height: 25px;
+        margin: 0;
+      }
+    }
+    label {
+      height: 31px;
+      width: 96px;
+      border-radius: 100px;
+      background-color: #000000;
+      color: #ffffff;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 23px;
+      text-align: center;
+      padding: 6px 19px;
+      outline: none;
+      border: none;
+      :active {
+        outline: none;
+        border: none;
+      }
+    }
+    .inputFileStyle {
+      visibility: hidden !important;
+      display: none !important;
+    }
+  }
+  .secondConatiner {
+    height: auto;
+    width: 159px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: #e5e5e5;
+    img {
+      height: auto;
+      width: 100%;
+      border-radius: 10px;
+    }
+  }
+}
+
+.toolTip {
+  box-sizing: border-box;
+  height: 80px !important;
+  width: 187.5px !important;
+  border: 1px solid #939393 !important;
+  background-color: #ffffff !important;
+  color: #000000;
+  font-family: Poppins;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 21px;
+  padding: 19px 17px 19px 24px;
+}
+.input2 {
+  visibility: hidden !important;
+  display: none !important;
+}
+.input {
+  visibility: hidden !important;
+  display: none !important;
+}

@@ -1,0 +1,190 @@
+@import "./../../../../variable.module.scss";
+
+.mainContainer {
+  span {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 27px;
+  }
+
+  .dateFilter {
+    display: flex;
+    .brandDropDownContainer {
+      display: flex;
+    }
+    p {
+      display: flex;
+      margin-top: 20px;
+      width: 225px;
+      height: 80px;
+      align-items: center;
+      color: #000000;
+      font-family: Poppins;
+      font-size: 17px;
+      letter-spacing: 0;
+      line-height: 26px;
+
+      .dateDropDown {
+        margin-left: 10px;
+        margin-bottom: 7px;
+      }
+    }
+  }
+
+  .brandDropDown {
+    margin-right: 5px !important;
+    display: flex;
+
+    span {
+      display: flex;
+      margin-left: 10px;
+      font-size: small;
+      border: 1px solid #7b5cd9;
+      background: #7b5cd9;
+      border-radius: 9999999999999px;
+      color: white;
+      width: 20px;
+      height: 20px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .brandDropDownSVG {
+    margin-left: 5px;
+
+    span {
+      display: flex;
+      margin-top: 7px;
+    }
+  }
+
+  .brandInvoiceInfoContainer {
+    max-height: 811px;
+    width: 1234px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+    padding: 30px 41px 20px 35px;
+    overflow-y: auto;
+    margin-bottom: 25px;
+
+    .brandInvoiceContainer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h1 {
+        color: $dark1;
+        font-family: Poppins;
+        font-size: 23px;
+        font-weight: bold;
+        letter-spacing: 0;
+        line-height: 34px;
+      }
+
+      .contentContainer {
+        color: #000000;
+        font-family: Poppins;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 25px;
+        font-weight: 500;
+
+        .contentShare {
+          width: 40px;
+          margin-top: 5px;
+        }
+
+        .contentDownload {
+          width: 40px;
+        }
+
+        .contentInvoice {
+          width: 150px;
+          text-decoration: underline;
+        }
+
+        .contentName {
+          display: flex;
+          width: 275px;
+          font-weight: 500;
+
+          p {
+            text-decoration: underline;
+            font-weight: 400;
+            margin-left: 0.2rem;
+          }
+        }
+
+        .contentDate {
+          display: flex;
+          width: 275px;
+          font-weight: 500;
+
+          p {
+            font-weight: 400;
+            margin-left: 0.2rem;
+          }
+        }
+
+        .contentInfluencer {
+          width: 165px;
+          display: flex;
+          margin-left: 15px;
+
+          p {
+            font-weight: 400;
+            margin-left: 0.2rem;
+          }
+        }
+
+        .contentSales {
+          display: flex;
+          width: 140px;
+          font-weight: 500;
+
+          p {
+            font-weight: 400;
+            margin-left: 0.2rem;
+          }
+        }
+
+        .avatar {
+          height: 46px;
+          width: 46px;
+        }
+
+        .divider {
+          margin-top: 10px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+  }
+
+  .collapseContentContainer {
+    height: 121px;
+    background: #efefef;
+    padding: 34px 0px 0px 25px;
+
+    .collapseContent {
+      display: flex;
+
+      div {
+        font-weight: 500;
+        display: flex;
+        width: 420px;
+        margin-bottom: 10px;
+
+        p {
+          font-weight: 400;
+          margin-left: 0.2rem;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "./../../variable.module.scss";
+.logoutButton {
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.tokenContainer {
+  color: $primary2;
+  .token {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.ListItem_drawelistItem__3jeJG:not(.ListItem_drawelistItemActive__3vSBK):hover {
+  background: blue !important;
+}

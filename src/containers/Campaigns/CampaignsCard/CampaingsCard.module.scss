@@ -1,0 +1,216 @@
+@import "./../../../variable.module.scss";
+.campaignCard {
+  border-radius: 10px !important;
+  height: 100%;
+  box-shadow: 0px 6px 50px #0000001a !important;
+  &:hover {
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  }
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+  padding: 0 !important;
+  height: 100%;
+  .cardStatus {
+    font-size: 13px !important;
+    .alertBadge {
+      background-color: $danger;
+      padding: 4px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      display: flex;
+      align-items: center;
+      color: $white;
+      gap: 3px;
+      max-width: 140px;
+      .alertIcon {
+        font-size: 16px;
+      }
+    }
+  }
+
+  .cardDetails {
+    padding: 0px 10px 0px 32px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex: auto;
+    .campaignInfo {
+      flex: auto;
+      display: flex;
+      flex-direction: column;
+      .campaignName {
+        font-size: 19px;
+      }
+      .campaignNumber {
+        color: $dark2;
+        font-weight: 300;
+        font-size: 13px;
+      }
+      .wrapChip {
+        display: flex;
+        color: #3481ef;
+        margin-top: 14px;
+
+        .statusDraft {
+          width: fit-content;
+          height: 28px;
+
+          background-color: #a68ff9;
+          color: #ffffff;
+          font-family: Poppins;
+          font-size: 13px;
+          letter-spacing: 0;
+          line-height: 20px;
+        }
+        .statusPending {
+          width: fit-content;
+          height: 28px;
+          background-color: #5d6fd3;
+          color: #ffffff;
+          font-family: Poppins;
+          font-size: 13px;
+          letter-spacing: 0;
+          line-height: 20px;
+        }
+        .statusInvited {
+          width: fit-content;
+          height: 28px;
+          background-color: #3481ef;
+          color: #ffffff;
+          font-family: Poppins;
+          font-size: 13px;
+          letter-spacing: 0;
+          line-height: 20px;
+        }
+        .statusLive {
+          width: fit-content;
+          height: 28px;
+          background-color: #7b5cd9;
+          color: #ffffff;
+          font-family: Poppins;
+          font-size: 13px;
+          letter-spacing: 0;
+          line-height: 20px;
+        }
+        .statusClosed {
+          width: fit-content;
+          height: 28px;
+          background-color: #4ea9da;
+          color: #ffffff;
+          font-family: Poppins;
+          font-size: 13px;
+          letter-spacing: 0;
+          line-height: 20px;
+        }
+        .statusDeclined {
+          width: fit-content;
+          height: 28px;
+          background-color: #b485c5;
+          color: #ffffff;
+          font-family: Poppins;
+          font-size: 13px;
+          letter-spacing: 0;
+          line-height: 20px;
+        }
+
+        .personAvatar {
+          margin-left: 33px;
+          height: 30px;
+          width: 30px;
+        }
+        .mediaTag {
+          margin-left: 5px;
+          margin-top: 4px;
+          color: #000000;
+          font-family: Poppins;
+          font-size: 13px;
+          letter-spacing: 0;
+          line-height: 20px;
+        }
+      }
+    }
+    .iconInfo {
+      margin-right: 20px;
+    }
+    .personInfo {
+      text-align: center;
+      min-width: 100px;
+      max-width: 150px;
+      margin-top: 15px;
+    }
+  }
+}
+
+.popOver {
+  width: 284px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  padding: 35px 28px;
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    p {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+  :last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.chipLive {
+  background-color: $campaignLive !important;
+  color: $white !important;
+}
+.chipDraft {
+  background-color: $campaignDraft !important;
+  color: $white !important;
+}
+.chipPending {
+  background-color: $campaignPending !important;
+  color: $white !important;
+}
+.chipClosed {
+  background-color: $campaignClosed !important;
+  color: $white !important;
+}
+.chipLost {
+  background-color: $campaignLost !important;
+  color: $white !important;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .alertBadge > * {
+      &:not(:last-child) {
+        margin-right: 3px !important;
+      }
+    }
+    .cardDetails > * {
+      &:not(:last-child) {
+        margin-right: 5px !important;
+      }
+    }
+    .popOver div > * {
+      &:not(:last-child) {
+        margin-right: 10px !important;
+      }
+    }
+  }
+}
+.displayNone {
+  display: none !important;
+}

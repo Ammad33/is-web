@@ -1,0 +1,23 @@
+.root {
+  input {
+    border: 1px solid #939393;
+    border-radius: 5px;
+    font-family: Poppins;
+    font-size: 85px !important;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 128px;
+    height: 168px;
+    width: 134px;
+    border-radius: 10px;
+    text-align: center;
+    &:focus {
+      border: 2px solid #939393;
+      outline: #939393 auto 2px;
+    }
+    &:active {
+      border: 2px solid #939393;
+      outline: #939393 auto 2px;
+    }
+  }
+}

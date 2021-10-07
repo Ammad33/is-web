@@ -1,0 +1,199 @@
+@import "../../../variable.module.scss";
+.collections {
+  padding: 31px 50px !important;
+}
+
+.collectionContainer {
+  margin-top: 28px;
+}
+
+.dropDownCustomizeSvg {
+  svg {
+    margin-left: -36px;
+    margin-right: 20px;
+  }
+}
+
+.menuItem {
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: space-between !important;
+
+  div {
+    height: 31px;
+    width: 31px;
+    border-radius: 100px;
+
+    span {
+      color: $white;
+      font-family: Poppins;
+      font-size: 14px !important;
+      font-weight: 500 !important;
+      letter-spacing: 0;
+      line-height: 21px;
+      margin-left: 12px;
+    }
+
+    background-color: $primary1;
+  }
+}
+
+.product {
+  padding-bottom: 20px !important;
+
+  & > label {
+    line-height: 18px !important;
+  }
+}
+
+.accordianSummary {
+  box-sizing: border-box !important;
+  height: 66px;
+  width: 100%;
+  border: 1px solid $dark2 !important;
+  border-radius: 5px !important;
+  background-color: $white !important;
+}
+
+.collectionName {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .heading {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .quantity {
+      border: 1px solid $primary1;
+      background: $primary1;
+      border-radius: 9999999999999px;
+      color: $white;
+      padding: 3px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+  }
+}
+
+.svg {
+  margin-left: 28px;
+  margin-top: 5px;
+}
+
+.checkCollection {
+  display: flex;
+  align-items: center;
+  color: $primary1;
+  p {
+    color: $dark1;
+    margin-left: 5px;
+  }
+}
+
+.sliderContainer {
+  position: relative;
+  max-width: 800px;
+  margin: auto;
+  overflow: hidden;
+
+  .slideContent:hover .sliderImage {
+    opacity: 1;
+  }
+
+  .slideContent:hover .imageOverlay {
+    opacity: 0.65;
+    border-radius: 10px;
+    background-color: $primary1;
+  }
+
+  .imageOverlay {
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+
+  .imageRemove {
+    position: absolute;
+    text-align: center;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+
+  .slideContent:hover .imageRemove {
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+
+  .sliderImage {
+    height: 100px !important;
+    width: 100px !important;
+  }
+
+  .removeButton {
+    box-sizing: border-box;
+    height: 25px;
+    width: 73px;
+    border: 1px solid $white;
+    border-radius: 100px;
+    color: $white;
+    padding: 0.5px;
+    font-size: 12px;
+  }
+
+  .buttonBack {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  .buttonNext {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  button:not(.removeButton) {
+    padding-top: 37px;
+    padding-bottom: 37px;
+    padding-right: 5px;
+    padding-left: 5px;
+    background-color: $dark3;
+    border: none;
+  }
+  button:not(.removeButton):disabled,
+  button:not(.removeButton)[disabled] {
+    display: none;
+  }
+}
+
+.collectionCarousel {
+  position: sticky !important;
+  top: 0px;
+  z-index: 999;
+  background: $white;
+}

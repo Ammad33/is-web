@@ -1,0 +1,105 @@
+@import "./../../../../../variable.module.scss";
+.influencerCard {
+  border-radius: 10px !important;
+  height: 119px;
+  min-width: 366px;
+  width: 366px;
+  color: $dark1;
+  box-shadow: 0px 6px 50px #0000001a !important;
+
+  &:hover {
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+  }
+
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px !important;
+    height: 100%;
+    .cardDetails {
+      padding: 10px 0px 0px 0px;
+      display: flex;
+      gap: 0px;
+      flex: auto;
+
+      .first_last {
+        margin-top: 10px;
+        margin-left: 10px;
+        height: 20px;
+        width: 64px;
+        font-family: Poppins;
+        font-size: 14px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 21px;
+      }
+      .influencername {
+        height: 15px;
+        width: 101px;
+        font-family: Poppins;
+        font-size: 11px;
+        letter-spacing: 0;
+        line-height: 17px;
+      }
+      .instafollowers {
+        height: 15px;
+        width: 101px;
+        padding-top: 1px;
+        font-family: Poppins;
+        font-size: 11px;
+        letter-spacing: 0;
+        line-height: 17px;
+      }
+      .ytfollowers {
+        height: 15px;
+        width: 101px;
+        font-family: Poppins;
+        font-size: 11px;
+        letter-spacing: 0;
+        line-height: 17px;
+      }
+      .personInfo {
+        text-align: center;
+        min-width: 0px;
+        max-width: 150px;
+        margin-top: 5px;
+        .personAvatar {
+          margin: auto;
+          height: 50px;
+          width: 45px;
+        }
+      }
+      .instaIcon {
+        margin-left: 75px;
+        margin-top: 6px;
+        height: 16px;
+        width: 22px;
+      }
+      .ytIcon {
+        margin-left: 30px;
+        margin-top: 6px;
+        height: 50px;
+        width: 22px;
+      }
+      .fbIcon {
+        margin-left: 30px;
+        margin-top: 6px;
+        height: 16px;
+        width: 22px;
+      }
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .cardDetails {
+      > * {
+        &:not(:last-child) {
+          margin-right: 0px !important;
+        }
+      }
+    }
+  }
+}

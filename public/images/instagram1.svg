@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="77px" viewBox="0 0 77 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>64BADD89-8E67-45DD-9451-2D85D49923A2</title>
+    <defs>
+        <linearGradient x1="93.1348169%" y1="5.51037458%" x2="6.77251462%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#DF27FF" offset="0%"></stop>
+            <stop stop-color="#DB47A2" offset="27.958412%"></stop>
+            <stop stop-color="#D67F16" offset="75.815337%"></stop>
+            <stop stop-color="#E0CC54" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Settings---Connected-Accounts---Connected---Influencer" transform="translate(-501.000000, -397.000000)">
+            <g id="Instagram-block" transform="translate(501.000000, 397.000000)">
+                <rect id="Rectangle" fill="url(#linearGradient-1)" x="0" y="0" width="77" height="77" rx="9"></rect>
+                <g id="instagram" transform="translate(21.000000, 21.000000)" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
+                    <rect id="Rectangle" x="0" y="0" width="35" height="35" rx="5.83333333"></rect>
+                    <path d="M24.9239631,15.9733195 C25.3669111,18.9604098 23.8442982,21.8948292 21.1469487,23.2524805 C18.4495993,24.6101318 15.185657,24.0849193 13.0503689,21.9496311 C10.9150807,19.814343 10.3898682,16.5504007 11.7475195,13.8530513 C13.1051708,11.1557018 16.0395902,9.63308892 19.0266805,10.0760369 C22.0767774,10.5283279 24.4716721,12.9232226 24.9239631,15.9733195 Z" id="Path"></path>
+                    <line x1="26.99" y1="8" x2="27.01" y2="8" id="Path"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,96 @@
+@import "../../../variable.module.scss";
+
+.teamHeading {
+  font-family: Poppins;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 21px;
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+.mainContainer {
+  padding: 20px 75px;
+  &.noPadding {
+    padding: 20px 0px;
+  }
+  .memberRow {
+    margin-left: 24px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+    .memberName {
+      flex: auto;
+      font-size: 19px;
+    }
+    .memberAvatar {
+      height: 49px;
+      width: 49px;
+    }
+    .svg {
+      color: $primary1;
+      margin-right: 24px;
+      cursor: pointer;
+    }
+    button {
+      font-size: 15px;
+      color: #ffffff;
+      background: #000000;
+      border: none;
+      border-radius: 100px;
+      padding: 7px 25px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      justify-content: end;
+    }
+    button:focus {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      background: #000000;
+      border: none;
+      border-radius: 100px;
+      padding: 7px 25px;
+      outline: none;
+    }
+  }
+}
+
+.noContentContainer {
+  text-align: center;
+  .img {
+    width: 140px;
+    height: 125px;
+  }
+  h2 {
+    font-size: 23px;
+  }
+  p {
+    margin: 10px 0px;
+    font-size: 17px;
+  }
+}
+
+.errorText {
+  color: red;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .memberRow {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+}
+.padding8 {
+  padding-top: 8px;
+}

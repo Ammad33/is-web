@@ -1,0 +1,526 @@
+@import "./../../../variable.module.scss";
+
+.mainContainer {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  padding-top: 30px;
+
+  .campaignBasicInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .campaignStatus {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      .promotion {
+        color: $dark1;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 30px;
+        margin: 0px;
+        padding: 0px;
+      }
+
+      .pendingCampaign {
+        height: 34px;
+        width: 105px;
+        border-radius: 100px;
+        background-color: $brandPending;
+        color: $white;
+        font-family: Poppins;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 25px;
+      }
+
+      .invitedCampaign {
+        height: 34px;
+        width: 105px;
+        border-radius: 100px;
+        background-color: $influencerInvite;
+        color: $white;
+        font-family: Poppins;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 25px;
+      }
+
+      .influencerSocial {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      > div:not(:last-child) {
+        border-right: 1px solid #cccccc;
+        padding-right: 20px;
+      }
+    }
+  }
+
+  .contentContainer {
+    .flexContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+
+    .row {
+      display: flex;
+      justify-content: space-between;
+
+      .col2Width {
+        width: 812px;
+        box-shadow: 0px 6px 50px #0000001a !important;
+      }
+
+      .col3Width {
+        width: 391px;
+        box-shadow: 0px 6px 50px #0000001a !important;
+      }
+    }
+
+    .startCampaign {
+      margin-top: 15px;
+      text-decoration: underline;
+      cursor: pointer;
+      font-family: Poppins;
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 26px;
+    }
+  }
+}
+
+.popOver {
+  width: 284px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  padding: 35px 28px;
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+
+    p {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+
+  :last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.campaignPendingContainer {
+  min-height: 316px;
+  width: 813px;
+  border-radius: 10px;
+  background-color: #3481ef;
+  color: $white;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 32px 41px 20px 35px;
+  .negotiationsMessage{
+    font-size: 18px;
+  }
+
+  &.allSetCampaignPendingContainer {
+    background-color: #7b5dd9;
+
+    h1 {
+      margin-top: 20px;
+    }
+  }
+
+  h1 {
+    margin-top: 20px;
+    font-size: 35px;
+    font-family: Poppins;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    svg {
+      height: 32px;
+      width: 32px;
+    }
+  }
+
+  p {
+		color: #FFFFFF;
+		font-family: Poppins;
+		font-size: 18px;
+		letter-spacing: 0;
+		line-height: 27px;
+  }
+
+	.containerNote {
+		color: #FFFFFF;
+		font-family: Poppins;
+		font-size: 18px;
+		letter-spacing: 0;
+		line-height: 27px;
+		margin-bottom: 10px;
+	}
+
+  button {
+    margin-top: 30px;
+    height: 44px;
+    width: 117px;
+    border-radius: 100px;
+    background-color: $white;
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 26px;
+    border: none;
+  }
+
+  .offerButtons {
+    display: flex;
+    gap: 15px;
+
+    .acceptButton {
+      height: 44px;
+      width: 139px;
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 26px;
+      border: none;
+    }
+
+    .negotiateButton {
+      height: 44px;
+      width: 139px;
+      color: $white;
+      font-family: Poppins;
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 26px;
+      background-color: #7b5dd9;
+      border: 1px solid $white !important;
+      border: none;
+    }
+
+    .declineButton {
+      height: 44px;
+      width: 139px;
+      color: $white;
+      font-family: Poppins;
+      font-size: 17px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 26px;
+      background-color: #7b5dd9;
+      border: none;
+    }
+  }
+}
+
+.dropDownCustomizeSvg {
+  svg {
+    margin-left: -36px;
+    margin-right: 20px;
+  }
+}
+
+.CampaignHeading {
+  display: flex;
+  flex-direction: row;
+  gap: 21.5px;
+  align-items: center;
+  margin-bottom: 51px !important;
+  margin-top: 43px;
+
+  span {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 50px;
+    cursor: pointer;
+  }
+}
+
+.x {
+  width: 100%;
+  padding: 27px 27px 27px 27px;
+
+  svg {
+    float: right;
+    height: 27px;
+    width: 27px;
+  }
+}
+
+.negotiationDialog {
+  height: 701px !important;
+  width: 667px !important;
+  max-width: 667px !important;
+  max-height: 701px !important;
+  border-radius: 20px !important;
+  background-color: $white;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 41px 38px 40px 38px !important;
+
+  .dialogTitle {
+    padding: 0px !important;
+
+    .titleText {
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 30px;
+    }
+  }
+
+  .dialogContent {
+    padding-left: 0px !important;
+    padding-top: 29px !important;
+    label{
+      width: auto !important;
+    }
+    .marginbottomSelect {
+      margin-bottom: 19px !important;
+    }
+
+    .addMore {
+      display: flex;
+      flex-direction: row;
+      gap: 8px;
+      align-items: center;
+      cursor: pointer;
+      margin-top: 19px;
+
+      svg {
+        width: 26px;
+        height: 28px;
+      }
+
+      p {
+        color: #000000;
+        font-family: Poppins;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 25px;
+      }
+    }
+
+    .selectFormControl {
+    }
+
+    margin-bottom: 20px;
+  }
+
+  .dialogActions {
+    padding: 0px !important;
+
+    button {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 27px;
+      border: none;
+    }
+
+    .sendButton {
+      height: 52px;
+      width: 241px;
+      border-radius: 100px;
+      border: none;
+
+      &.disabled {
+        color: #959595;
+        background-color: #cccccc;
+      }
+
+      &.active {
+        background-color: $dark1;
+        color: $white;
+      }
+    }
+  }
+}
+
+.declineDialog {
+  width: 667px;
+  max-width: 667px !important;
+  max-height: 686px !important;
+  margin: 0px !important;
+  padding: 41px 38px !important;
+
+  .dialogTitle {
+    padding: 0px !important;
+
+    .titleText {
+      font-family: Poppins;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 30px;
+    }
+  }
+
+  .dialogContent {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    padding-bottom: 0px !important;
+    padding-top: 29px !important;
+    margin-bottom: 20px;
+    label{
+      width: auto !important;
+    }
+    .rejectionTextContainer {
+      font-family: Poppins;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 25px;
+      resize: none;
+      width: 100;
+      height: 272px;
+      width: 591px;
+    }
+  }
+
+  .dialogActions {
+    padding: 0px !important;
+
+    button {
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 27px;
+      margin-right: 12px;
+      border: none;
+    }
+
+    .sendButton {
+      height: 52px;
+      width: 241px;
+      border-radius: 100px;
+      border: none;
+
+      &.disabled {
+        color: #959595;
+        background-color: #cccccc;
+      }
+
+      &.active {
+        background-color: $dark1;
+        color: $white;
+      }
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .mainContainer {
+      > * {
+        &:not(:last-child) {
+          margin-bottom: 30px !important;
+        }
+      }
+    }
+
+    .campaignStatus {
+      > * {
+        &:not(:last-child) {
+          margin-right: 20px !important;
+        }
+      }
+    }
+
+    .influencerSocial {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+
+    .popOver div {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+
+    .campaignPendingContainer h1 {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+
+    .offerButtons {
+      > * {
+        &:not(:last-child) {
+          margin-right: 15px !important;
+        }
+      }
+    }
+
+    .CampaignHeading {
+      > * {
+        &:not(:last-child) {
+          margin-right: 21.5px !important;
+        }
+      }
+    }
+
+    .addMore {
+      > * {
+        &:not(:last-child) {
+          margin-right: 8px !important;
+        }
+      }
+    }
+  }
+}
+.micrositeViewStyle {
+  border: none !important;
+}
+.displayNone {
+  display: none !important;
+}
+.negotiableStyle {
+  width: 391px !important;
+}
+.errorMessageStyle {
+  padding: 10px !important;
+  color: red !important;
+}
+.proposingMessage{
+  font-size: 18px !important;
+  margin-top: 20px !important;
+}

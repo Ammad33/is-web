@@ -1,0 +1,299 @@
+@import "./../../variable.module.scss";
+
+.container {
+  display: flex;
+  flex-direction: row;
+  max-width: 1630px;
+  width: 100%;
+  height: 95%;
+  margin: 0 auto;
+}
+
+.conversationDetail {
+  max-width: 743.5px !important;
+}
+
+.mainContainer {
+  height: calc(100vh - 112px);
+  max-width: 1232px;
+  margin: auto;
+  display: flex;
+  // overflow: hidden;
+  .conversationsSection {
+    flex: auto;
+    padding: 0px 40px 40px;
+    overflow: auto;
+  }
+  .messageFiltersContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 40px;
+    button {
+      background: transparent;
+      border: none !important;
+      font-size: 17px;
+      line-height: 26px;
+      padding: 5px 16px;
+      font-family: "Poppins Regular", sans-serif;
+      cursor: pointer;
+    }
+    button:active,
+    :focus {
+      outline: none;
+    }
+  }
+  .headingAndButtonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 1em;
+    margin-top: 2em;
+    margin-bottom: 1em;
+    button {
+      font-size: 15px;
+      color: #ffffff;
+      background: #000000;
+      border: none;
+      border-radius: 100px;
+      padding: 10px 16px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+    button:focus {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      color: #ffffff;
+      background: #000000;
+      border: none;
+      border-radius: 100px;
+      padding: 10px 16px;
+      outline: none;
+    }
+  }
+  .headingAndDropdown {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+    align-items: center;
+    margin-bottom: 20px;
+    margin-top: 1em;
+    span {
+      font-family: "Poppins", sans-serif;
+      font-size: 33px;
+      font-weight: 500;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  .active {
+    background-color: $dark1 !important;
+    border: none !important;
+    color: $white;
+    padding: 8px 16px;
+    border-radius: 100px;
+    font-size: 12px;
+    outline: none;
+    font-family: "Poppins Light", sans-serif;
+  }
+
+  .conversationsContainer {
+    box-shadow: 0px 6px 50px #0000001a !important;
+    border-radius: 10px;
+    // height: calc(100% - 200px);
+    overflow: hidden;
+  }
+}
+
+.chatContainer {
+  border-left: 1px solid #cccccc;
+  max-width: 885px;
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  margin-right: -20px;
+}
+
+.chatContainerSelected {
+  max-width: 587px;
+}
+
+.inputContainer {
+  height: 92px;
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  gap: 37.5px;
+  padding: 16px 51px 16px 37.5px;
+  bottom: 0;
+  align-items: center;
+  position: absolute;
+}
+
+.boxShadow {
+  box-shadow: 0 -3px 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+.topInputConatiner {
+  padding: 25px;
+  position: absolute;
+  width: 100%;
+}
+
+.popOver {
+  width: 286px;
+  background-color: $white;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  padding: 35px 29px;
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 55px;
+
+    p {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+
+  :last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.topAvatarConatiner {
+  height: 81px;
+  width: 100%;
+  display: flex;
+  padding-top: 21px;
+  padding-bottom: 15px;
+  padding-right: 49px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  box-shadow: 0 3px 8px 0 rgba(0, 0, 0, 0.06);
+}
+.avatarContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+}
+
+.popOver2 {
+  width: 190px;
+  background-color: $white;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  padding: 20px 20px;
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 20px;
+
+    p {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+
+  :last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.ShareFileHeading {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 30px;
+}
+.backToConv {
+  display: flex;
+  align-items: center;
+  margin-left: 22px;
+  p {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 26px;
+    margin-left: 15px;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .messageFiltersContainer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 50px !important;
+        }
+      }
+    }
+    .headingAndDropdown {
+      > * {
+        &:not(:last-child) {
+          margin-right: 25px !important;
+        }
+      }
+    }
+    .inputContainer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 37.5px !important;
+        }
+      }
+    }
+    .popOver div {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+    .avatarContainer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 8px !important;
+        }
+      }
+    }
+    .popOver2 div {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+}
+.titleStyle {
+  text-decoration: underline !important;
+  cursor: pointer !important;
+}

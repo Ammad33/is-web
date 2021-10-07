@@ -1,0 +1,169 @@
+@import "../../variable.module.scss";
+
+.cancel {
+  height: 630px !important;
+  width: 667px !important;
+  max-width: 667px !important;
+  max-height: 630px !important;
+  border-radius: 20px;
+  background-color: $white;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 41px 38px 38px 38px !important;
+
+  .StopHeading {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin: 0px !important;
+    padding: 0px !important;
+    margin-bottom: 6px !important;
+  }
+  h6 {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin: 0px !important;
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+  }
+  .note {
+    margin-bottom: 46px;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+  }
+
+  .customMessage {
+    gap: 71px;
+    margin-bottom: 0px !important;
+
+  }
+
+  .uploadSection {
+    display: flex;
+    flex-direction: row;
+    gap: 71px;
+    margin-top: 71px;
+
+    .emptySection {
+      height: 151px;
+      width: 97px;
+      border-radius: 10px;
+      background-color: #e5e5e5;
+    }
+
+    .buttonSection {
+      p {
+        color: $dark1;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 25px;
+        margin-bottom: 38px;
+      }
+
+      button {
+        height: 31px;
+        width: 96px;
+        border-radius: 100px;
+        background-color: $dark1;
+        color: $white;
+        font-family: Poppins;
+        font-size: 15px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 23px;
+        outline: none;
+        border: none;
+
+        :focus {
+          outline: none;
+          border: none;
+        }
+      }
+    }
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 70px;
+    position: absolute;
+    bottom: 20px;
+    right: 38px;
+
+    span {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 27px;
+      cursor: pointer;
+    }
+
+    button {
+      height: 52px;
+      border-radius: 100px;
+      background-color: #db7474;
+      color: #ffffff;
+      font-family: Poppins;
+      font-size: 19px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 29px;
+      border: none;
+      outline: none;
+      padding-left: 28px;
+      padding-right: 28px;
+
+      :focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.dropDownCustomizeSvg {
+  svg {
+    margin-left: -33px;
+    margin-right: 20px;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .customMessage {
+      > * {
+        &:not(:last-child) {
+          margin-right: 71px !important;
+        }
+      }
+    }
+    .uploadSection {
+      > * {
+        &:not(:last-child) {
+          margin-right: 71px !important;
+        }
+      }
+    }
+    .footer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 70px !important;
+        }
+      }
+    }
+  }
+}

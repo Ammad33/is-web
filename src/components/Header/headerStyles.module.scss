@@ -1,0 +1,99 @@
+@import "./../../variable.module.scss";
+.menuBarGrid {
+  margin-bottom: 8px;
+  .popupContainer {
+    margin: 24px 0px 0px 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .name {
+      color: #000000;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 27px;
+      margin-left: 13px;
+      text-transform: capitalize;
+    }
+    .email {
+      color: #000000;
+      font-family: Poppins;
+      font-size: 13px;
+      letter-spacing: 0;
+      line-height: 20px;
+      text-transform: lowercase;
+    }
+  }
+  .divider {
+    margin-top: 18px !important;
+  }
+  .menuBarItems {
+    margin-left: 30px;
+    .itemsFont {
+      color: #000000;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+      margin-top: 30px;
+    }
+  }
+}
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 0px;
+  width: 98%;
+  gap: 50px;
+  .searchContainer {
+    margin-top: 10px;
+
+    width: 70%;
+    .headerSearchIcon {
+      position: absolute;
+      font-size: 30px !important;
+    }
+    .searchInput {
+      width: 75%;
+      border-radius: 5px;
+      height: 50px;
+      border: none;
+      padding-left: 45px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+  .selectBrandContainer {
+    margin-top: 5px;
+    width: 250px;
+  }
+  .memberAvatar {
+    height: 49px;
+    width: 49px;
+  }
+  .helpContainer{
+    cursor:pointer;
+  }
+  .notificationContainer{
+    cursor:pointer;
+  }
+  .avatarContainer{
+    cursor:pointer;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .actionsContainer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 50px !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,292 @@
+@import "../../../variable.module.scss";
+.mainContainer {
+  padding-top: 8px !important;
+  .section {
+    padding: 25px 0px;
+    border-bottom: 1px solid $dark3;
+    &:last-of-type {
+      border-bottom: none;
+    }
+  }
+}
+
+.influe {
+  display: flex;
+  justify-content: center;
+}
+
+.influencerContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+  margin-bottom: 19px;
+  margin-top: 8px;
+  .avatar {
+    height: 52px;
+    width: 52px;
+  }
+  p {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 27px;
+  }
+}
+.titleAndAction {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  span {
+    word-break: break-all;
+  }
+}
+.compensationInfluencer {
+  p {
+    font-size: 18px;
+    font-weight: 500;
+  }
+}
+.campaigndDetails {
+  .campaignItemInfo {
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+.teamMembersContainer {
+  .teamMemberItem {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .noTeamMember {
+    margin-left: 15px;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 27px;
+  }
+}
+.budgetAndConversionContainer {
+  .budgetContainerItem {
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+.estimateText {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 14px;
+  letter-spacing: 0;
+  line-height: 21px;
+}
+.compensationEstimate {
+  margin: 20px 0px 10px 0px !important;
+}
+
+.compensationBadge {
+  height: 27px;
+  border-radius: 6px;
+  margin-top: 10px;
+  background-color: #db7474;
+  display: inline-block;
+  p {
+    padding: 6px 10px;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0;
+  }
+}
+
+.collectionContainer {
+  .collectionSection {
+    .sectionTitle {
+      font-size: 18px;
+      margin-bottom: 12px;
+      font-weight: 500;
+      margin-top: 28px;
+    }
+    .collectionItems {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      .collectionItem {
+        .itemPlaceholderBox {
+          height: 145px;
+          width: 140px;
+          border-radius: 20px;
+          background-color: #e8e8e8;
+        }
+        .itemText {
+          max-width: 140px;
+          margin: 10px 0px;
+          white-space: pre;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .boxItem {
+          color: $dark1;
+          font-family: Poppins;
+          font-size: 14px;
+          letter-spacing: 0;
+          line-height: 21px;
+          width: 140px;
+          white-space: pre;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
+        .boxPrice {
+          color: $dark1;
+          font-family: Poppins;
+          font-size: 11px;
+          letter-spacing: 0;
+          line-height: 17px;
+        }
+      }
+    }
+  }
+}
+
+.postTotalContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  h4 {
+    color: #7b5cd9;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+  h5 {
+    color: #7b5cd9;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+}
+
+.deliverablesContainer {
+  .displayNone {
+    display: none !important;
+  }
+  h4 {
+    color: #7b5cd9;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-bottom: 12px;
+  }
+  margin-bottom: 16px;
+  .deliverableItem {
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+.compensationContainer {
+  .compensationItem {
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+.negotiablesContainer {
+  .negotiableItem {
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+.influencerContainer {
+  .influencerItem {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    .avatarMedium {
+      height: 60px;
+      width: 60px;
+    }
+    p {
+      font-size: 18px;
+      font-weight: 500;
+    }
+  }
+}
+
+.compensationHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 10px;
+  h4 {
+    color: #7b5cd9;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+  h5 {
+    color: #7b5cd9;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .influencerContainer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 12px !important;
+        }
+      }
+    }
+    .teamMemberItem {
+      > * {
+        &:not(:last-child) {
+          margin-right: 20px !important;
+        }
+      }
+    }
+    .collectionItems {
+      > * {
+        &:not(:last-child) {
+          margin-right: 15px !important;
+        }
+      }
+    }
+    .influencerItem {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+}

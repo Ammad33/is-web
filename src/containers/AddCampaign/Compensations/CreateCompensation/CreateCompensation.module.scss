@@ -1,0 +1,60 @@
+@import "../../../../variable.module.scss";
+.headingColor {
+  color: $dark1;
+  font-family: Poppins;
+  font-size: 16px;
+  font-weight: 500;
+  padding-top: 16px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.marginTop {
+  margin-top: 16px !important;
+}
+
+.dropDownCustomizeSvg {
+  svg {
+    margin-left: -36px;
+    margin-right: 20px;
+  }
+}
+.giftCard {
+  margin-top: 25px !important;
+  & > label {
+    line-height: 18px !important;
+  }
+}
+
+.product {
+  padding-bottom: 20px !important;
+  & > label {
+    line-height: 18px !important;
+  }
+}
+
+.marginbottomSelect {
+  margin-bottom: 19px !important;
+}
+
+.accordianSummary {
+  box-sizing: border-box !important;
+  height: 66px;
+  width: 100%;
+  border: 1px solid #939393 !important;
+  border-radius: 5px !important;
+  background-color: #ffffff !important;
+}
+.collectionName {
+  width: 100%;
+}
+
+.svg {
+  float: right;
+  margin-top: 3px;
+}

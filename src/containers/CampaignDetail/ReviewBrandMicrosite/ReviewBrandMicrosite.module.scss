@@ -1,0 +1,107 @@
+@import "../../../variable.module.scss";
+
+.mainContainer {
+  min-width: 1235px;
+  padding-bottom: 15px;
+  margin: auto;
+
+  .crumsContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 21.5px;
+    align-items: center;
+    margin-bottom: 51px;
+    margin-top: 43px;
+
+    span {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 33px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 50px;
+      cursor: pointer;
+    }
+  }
+
+  .contentContainer {
+    width: 910px;
+    min-width: 910px;
+    max-width: 910px;
+
+    .secondContainer {
+      height: 1275px;
+      width: 910px;
+      border-radius: 10px;
+      background-color: #ffffff;
+      box-shadow: 0 6px 50px 0 rgba(14, 11, 11, 0.1);
+    }
+
+    .actionsContainer {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 10px;
+      margin-top: 30px;
+
+      button.approveBtn {
+        height: 52px;
+        width: 172px;
+        color: #ffffff;
+        font-family: Poppins;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 29px;
+        border-radius: 100px;
+        background-color: #000000;
+        border: none;
+      }
+
+      .declineBtn {
+        height: 52px;
+        width: 250px;
+        color: #000000;
+        font-family: Poppins;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 29px;
+        text-align: center;
+        border-radius: 100px;
+        margin-right: 10px;
+        margin-top: 25px;
+      }
+    }
+
+    .errorContainer {
+      .errorSignContract {
+        width: 100%;
+        color: red;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 30px !important;
+      }
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .crumsContainer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 21.5px !important;
+        }
+      }
+    }
+
+    .actionsContainer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+}

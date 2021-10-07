@@ -1,0 +1,91 @@
+@import "../../../variable.module.scss";
+.activityContainer {
+  min-height: 316px;
+  width: 391px;
+  border-radius: 10px;
+  background-color: $white;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 32px 41px 20px 35px;
+  h1 {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: bold;
+    letter-spacing: 0;
+    line-height: 34px;
+  }
+  .mainDiv {
+    margin-top: 28px;
+    margin-bottom: 35px;
+
+    .border {
+      border-left: 1px solid $dark1;
+      height: 50px;
+      margin-left: 67px;
+      margin-top: -6px;
+      margin-bottom: -6px;
+    }
+
+    .activitySubContent {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 15px;
+      span {
+        letter-spacing: 0px;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 500;
+        width: 48px;
+        font-family: Poppins;
+        color: $dark1;
+      }
+      div {
+        width: 10px;
+        height: 10px;
+        background: #5d6fd3 0% 0% no-repeat padding-box;
+        border-radius: 100px !important;
+      }
+      p {
+        color: $dark1;
+        font-family: Open Sans;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0;
+        line-height: 22px;
+        margin: 0px !important;
+      }
+    }
+  }
+  button {
+    outline: none;
+    border: none;
+    height: 31px;
+    width: 82px;
+    border-radius: 100px;
+    background-color: $dark1;
+    color: $white;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 0px;
+    text-align: center;
+    padding: 0px;
+    :focus {
+      outline: none;
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .activitySubContent {
+      > * {
+        &:not(:last-child) {
+          margin-right: 15px !important;
+        }
+      }
+    }
+  }
+}

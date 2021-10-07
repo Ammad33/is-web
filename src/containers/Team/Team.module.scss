@@ -1,0 +1,223 @@
+@import "../../variable.module.scss";
+
+.popOver {
+  padding: 20px 33px;
+
+  .removeDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+
+    p {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+
+  .deleteDiv {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    margin-top: 30px;
+    cursor: pointer;
+
+    svg {
+      stroke: #db7474;
+    }
+
+    p {
+      color: #db7474;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+}
+
+.TeamContainer {
+  max-width: 1250px;
+  margin: auto;
+}
+
+.TeamHeading {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 1em;
+  margin-left: 10px;
+
+  span {
+    font-family: "Poppins", sans-serif;
+    font-size: 33px;
+    font-weight: 500;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+
+.TeamHeadingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+
+  button {
+    font-size: 15px;
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+
+  button:focus {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 16px;
+    outline: none;
+  }
+}
+
+.TeamInfoContainer {
+  width: 1234px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  margin-top: 27px !important;
+  margin: auto;
+
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    padding: 30px 0px 20px 54px;
+
+    .avatar {
+      width: 46px;
+      height: 46px;
+    }
+    span {
+      color: #000000;
+      font-family: Poppins;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 25px;
+      margin-left: 15px;
+      width: 62%;
+    }
+    .dropDown {
+      width: 164px;
+      height: 49px;
+      margin-bottom: 8px;
+    }
+
+    h1 {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 34px;
+    }
+  }
+
+  .itemImage {
+    width: 46px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    padding: 27px 0px 0px 41px;
+  }
+  .divider {
+    width: 94%;
+    margin-left: 36px;
+  }
+}
+
+.noMembers {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 120px; // color: #000000;
+}
+
+.noMembersText {
+  h6 {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 42px;
+    text-align: center;
+    margin: 29px 0px 0px 0px;
+  }
+
+  p {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 300;
+    letter-spacing: 0;
+    line-height: 20px;
+    text-align: center;
+    margin: 25px 0px 0px 0px;
+  }
+}
+
+.dropDownCustomizeSvg {
+  svg {
+    margin-left: -36px;
+    margin-right: 20px;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .removeDiv {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+    .deleteDiv {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+    .TeamHeading {
+      > * {
+        &:not(:last-child) {
+          margin-right: 25px !important;
+        }
+      }
+    }
+  }
+}

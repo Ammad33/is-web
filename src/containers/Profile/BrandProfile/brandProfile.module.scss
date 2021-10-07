@@ -1,0 +1,104 @@
+@import "../../../variable.module.scss";
+.mainContainer {
+  width: 1588px !important;
+  max-width: 1588px !important;
+  min-width: 1588px !important;
+  display: flex;
+  .contentContainer {
+    padding-left: 202px;
+    padding-right: 202px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    .profileHeading {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      margin-bottom: 50px;
+      .brandInfo {
+        display: flex;
+        gap: 27px;
+        .brandImage {
+          height: 118px;
+          width: 120px;
+        }
+        .nameAndMessage {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          gap: 10px;
+          .brandName {
+            font-size: 20px;
+            font-weight: 600;
+            letter-spacing: 0;
+            line-height: 30px;
+          }
+          .messageButton {
+            height: 31px;
+            width: 111px;
+            border-radius: 100px;
+            background-color: $dark1;
+            font-size: 15px;
+            font-weight: 500;
+            letter-spacing: 0;
+            line-height: 23px;
+            color: $white;
+            border: none;
+            padding: 0px;
+          }
+        }
+      }
+      .buttonContainer {
+        .addButton {
+          height: 52px;
+          width: 185px;
+          border-radius: 100px;
+          background-color: $dark1;
+          font-size: 17px;
+          font-weight: 500;
+          letter-spacing: 0;
+          line-height: 26px;
+          color: $white;
+          border: none;
+          padding: 0px;
+        }
+      }
+    }
+  }
+  .rightSidebar {
+    width: 418px !important;
+    max-width: 418px !important;
+    min-width: 418px !important;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .brandInfo {
+      > * {
+        &:not(:last-child) {
+          margin-right: 27px !important;
+        }
+      }
+    }
+    .nameAndMessage {
+      > * {
+        &:not(:last-child) {
+          margin-right: 21px !important;
+        }
+      }
+    }
+  }
+}
+.heroLabel {
+  color: #3481ef !important;
+  font-family: Poppins !important;
+  font-size: 14px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  line-height: 21px !important;
+  cursor: pointer !important;
+}
+.heroInput {
+  visibility: hidden !important;
+  display: none !important;
+}

@@ -1,0 +1,278 @@
+@import "../../../variable.module.scss";
+.detailContainer {
+  max-width: 1235px;
+  min-width: 1235px;
+  padding-bottom: 15px;
+  margin: auto;
+}
+.x {
+  width: 100%;
+  padding: 27px 27px 27px 27px;
+  svg {
+    float: right;
+    height: 27px;
+    width: 27px;
+  }
+}
+
+.secondContainer {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.first {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+.second {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.CampaignHeading {
+  display: flex;
+  flex-direction: row;
+  gap: 21.5px;
+  align-items: center;
+  margin-bottom: 51px;
+  margin-top: 43px;
+  span {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 50px;
+    cursor: pointer;
+  }
+}
+
+.subHeadingSection {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 45.5px;
+
+  .micrositeContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 60px;
+    width: 358px;
+    background-color: #3481ef;
+    border-right: none !important;
+    border-radius: 10px;
+    padding: 0px 20px;
+    color: $white;
+    font-weight: 500;
+    .linkIconAndName {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+  }
+}
+
+.live {
+  background-color: #7b5cd9 !important;
+}
+
+.invite {
+  background-color: #3481ef !important;
+}
+
+.pending {
+  background-color: #5d6fd3 !important;
+}
+
+.subCampaignSubHeading {
+  display: flex;
+  flex-direction: row;
+  gap: 21.5px;
+  align-items: center;
+  p {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 30px;
+  }
+  .borderDiv {
+    border-left: 1px solid lightgray;
+    height: 50px;
+  }
+  .campaignStatus {
+    background-color: $campaignClosed;
+    color: $white !important;
+    color: $white;
+    font-family: Poppins;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+    height: 34px;
+    width: 96px;
+    border-radius: 100px;
+  }
+  .avatarContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 11px;
+    .avatar {
+      height: 46px;
+      width: 46px;
+    }
+    span {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 25px;
+    }
+  }
+}
+
+.firstConatiner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lost {
+  background-color: #b485c5 !important;
+}
+
+.teamMembersContent {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+  p {
+    font-size: 18px;
+    line-height: 27px;
+    letter-spacing: 0px;
+    color: #000000;
+    margin: 0px !important;
+  }
+}
+
+.headerContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.chipLive {
+  background-color: $campaignLive !important;
+  color: $white !important;
+}
+.chipDraft {
+  background-color: $campaignDraft !important;
+  color: $white !important;
+}
+.chipPending {
+  background-color: $campaignPending !important;
+  color: $white !important;
+}
+
+.chipLost {
+  background-color: $campaignLost !important;
+  color: $white !important;
+}
+.popOver {
+  width: 288px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  padding: 35px 30px 32px 30px;
+
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    p {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+
+  .secondElement {
+    margin-top: 45px;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .first {
+      > * {
+        &:not(:last-child) {
+          margin-bottom: 30px !important;
+        }
+      }
+    }
+    .second {
+      > * {
+        &:not(:last-child) {
+          margin-right: 20px !important;
+        }
+      }
+    }
+    .CampaignHeading {
+      > * {
+        &:not(:last-child) {
+          margin-right: 21.5px !important;
+        }
+      }
+    }
+    .linkIconAndName {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+    .subCampaignSubHeading {
+      > * {
+        &:not(:last-child) {
+          margin-right: 21.5px !important;
+        }
+      }
+    }
+    .avatarContainer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 11px !important;
+        }
+      }
+    }
+    .teamMembersContent {
+      > * {
+        &:not(:last-child) {
+          margin-right: 15px !important;
+        }
+      }
+    }
+    .popOver div {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+}
+.collectionContainer {
+  margin-top: 30px !important;
+}

@@ -1,0 +1,57 @@
+@import "../../../variable.module.scss";
+
+.liveContainer {
+  height: 316px;
+  max-width: 813px;
+  // : 100%;
+  width: 100%;
+  border-radius: 10px;
+  background-color: #7b5cd9;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 50px 53px 50px 88px;
+
+  h1 {
+    svg {
+      width: 27px;
+      height: 27px;
+    }
+    font-family: Poppins;
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: bold;
+    letter-spacing: 0;
+    margin: 0px;
+    line-height: 53px;
+  }
+
+  .firstp {
+    margin: 0px;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin-top: 8px;
+    margin-bottom: 49px;
+  }
+
+  .accept {
+    border: none;
+    border-radius: 100px;
+    background-color: #ffffff;
+    outline: none;
+    border: none;
+    height: 44px;
+    width: 117px;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: center;
+    :focus {
+      outline: none;
+    }
+  }
+}

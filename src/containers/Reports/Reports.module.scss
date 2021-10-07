@@ -1,0 +1,224 @@
+@import "../../variable.module.scss";
+.reportsContainer {
+  max-width: 1250px;
+  margin: auto;
+}
+.ReportHeading {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 1em;
+
+  span {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 50px;
+  }
+
+  p {
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+    margin-left: 8px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 17px;
+    letter-spacing: 0;
+    line-height: 26px;
+    text-align: right;
+  }
+}
+.ReportHeadingButton {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  align-items: center;
+  margin-bottom: 40px;
+  button {
+    background: transparent;
+    border: none !important;
+    font-size: 17px;
+    line-height: 26px;
+    padding: 5px 16px;
+    font-family: "Poppins Regular", sans-serif;
+    cursor: pointer;
+  }
+  button:active,
+  :focus {
+    outline: none;
+  }
+}
+.allActive {
+  background-color: $dark1 !important;
+  border: none !important;
+  color: #ffffff;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-family: Poppins;
+  font-size: 17px;
+  letter-spacing: 0;
+  line-height: 26px;
+  outline: none;
+}
+.tab {
+  color: #000000;
+  font-family: Poppins !important;
+  font-size: 17px !important;
+  letter-spacing: 0 !important;
+  line-height: 26px !important;
+}
+.gridItem {
+  min-width: 395px;
+  max-width: 395px;
+  min-height: 160px;
+  max-height: 160px;
+  height: 160px;
+  padding: 0px !important;
+  margin: 12px !important;
+}
+.ReportHeadingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1em;
+  margin-top: 2em;
+  margin-bottom: 1em;
+  button {
+    font-size: 15px;
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  button:focus {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 100px;
+    padding: 10px 16px;
+    outline: none;
+  }
+}
+
+/**************************** */
+
+.ReportInfoContainer {
+  &.withChildHeight {
+    height: 1054px;
+  }
+  &.withNoChildHeight {
+    height: 1011px;
+  }
+  height: 1119px;
+  width: 1250px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 32px 41px 20px 35px;
+  .ReportContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 34px;
+    }
+    .secondContainer {
+      height: 1000px;
+    }
+  }
+}
+.ReportInfoContainerTwo {
+  &.withChildHeight {
+    height: 454px;
+  }
+  &.withNoChildHeight {
+    height: 311px;
+  }
+  height: 419px;
+  width: 602px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 32px 41px 20px 35px;
+  .ReportContainerTwo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 34px;
+    }
+  }
+}
+
+.ReportInfoContainerThree {
+  &.withChildHeight {
+    height: 454px;
+  }
+  &.withNoChildHeight {
+    height: 311px;
+  }
+  height: 419px;
+  width: 391px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 32px 41px 20px 35px;
+  .ReportContainerThree {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1 {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 34px;
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .ReportHeading {
+      > * {
+        &:not(:last-child) {
+          margin-right: 25px !important;
+        }
+      }
+    }
+    .ReportHeadingButton {
+      > * {
+        &:not(:last-child) {
+          margin-right: 50px !important;
+        }
+      }
+    }
+  }
+}

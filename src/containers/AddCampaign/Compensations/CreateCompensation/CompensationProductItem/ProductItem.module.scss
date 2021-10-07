@@ -1,0 +1,43 @@
+@import "../../../../../variable.module.scss";
+.collectionItemContainer {
+  display: flex;
+  flex-direction: column;
+  .divContainer {
+    position: relative;
+  }
+  svg {
+    color: $primary1;
+    cursor: pointer;
+    position: absolute;
+    top: 8px;
+    right: 8px;
+  }
+  .divGary {
+    height: 160px;
+    width: 100%;
+    max-width: 154px;
+    border-radius: 20px;
+    background-color: #e8e8e8;
+  }
+  .itemName {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+  }
+  p {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 13px;
+    letter-spacing: 0;
+    line-height: 20px;
+    span {
+      margin-left: 16px;
+    }
+  }
+}
+
+.collections {
+  padding: 31px 30px;
+}

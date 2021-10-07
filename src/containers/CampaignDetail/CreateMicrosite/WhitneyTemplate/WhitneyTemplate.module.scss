@@ -1,0 +1,120 @@
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+
+  .firstContainer {
+    height: 1275px;
+    width: 377px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+    padding: 35px 31px 28px 33px;
+
+    h4 {
+      height: 29px;
+      // width: 208px;
+      color: #000000;
+      font-family: Poppins;
+      font-size: 21px;
+      font-weight: 600;
+      letter-spacing: 0;
+      line-height: 31px;
+      margin: 0px;
+      margin-bottom: 28px;
+    }
+    .quotesInput {
+      width: 313px;
+      height: 117px;
+      resize: none;
+      padding: 14.5px 14px;
+      border-radius: 4px;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 200;
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+    ::placeholder {
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 200;
+      letter-spacing: 0;
+      line-height: 20px;
+    }
+  }
+
+  .secondContainer {
+    height: 1275px;
+    width: 839px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.buttonContainer {
+  float: right;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+  margin: 30px 0px;
+  width: 100%;
+  justify-content: flex-end;
+
+  .liveButton {
+    box-sizing: border-box;
+    height: 52px;
+    width: 172px;
+    border: 2px solid #000000;
+    border-radius: 100px;
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 29px;
+  }
+
+  .sendButton {
+    height: 52px;
+    width: 302px;
+    border-radius: 100px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Poppins;
+    font-size: 19px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 29px;
+    text-align: center;
+    border: none;
+    margin-bottom: 25px;
+
+    :active {
+      outline: none;
+      border: none;
+    }
+  }
+}
+.x {
+  padding-top: 10px !important;
+}
+.divider {
+  margin-bottom: 33px !important;
+}
+.divider2 {
+  margin-bottom: 33px !important;
+  margin-top: 33px !important;
+}
+.errorContainer {
+  .errorSignContract {
+    width: 100%;
+    color: red;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 80px !important;
+  }
+}

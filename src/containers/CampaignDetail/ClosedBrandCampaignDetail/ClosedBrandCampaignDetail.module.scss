@@ -1,0 +1,213 @@
+@import './../../../variable.module.scss';
+.mainContainer {
+  display: flex;
+  flex-flow: column;
+  gap: 30px;
+  padding-top: 30px;
+  .campaignBasicInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .campaignStatus {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .promotion {
+        color: $dark1;
+        font-family: Poppins;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 30px;
+        margin: 0px;
+        padding: 0px;
+      }
+      .closedCampaign {
+        height: 34px;
+        width: 96px;
+        border-radius: 100px;
+        background-color: $brandClosed;
+        color: $white;
+        font-family: Poppins;
+        font-size: 16px;
+        letter-spacing: 0;
+        line-height: 25px;
+      }
+      .influencerSocial {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+
+      > div:not(:last-child) {
+        border-right: 1px solid #cccccc;
+        padding-right: 20px;
+      }
+    }
+  }
+  .contentContainer {
+    .flexContainer {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 30px;
+    }
+    .row {
+      display: flex;
+      justify-content: space-between;
+      .col2Width {
+        width: 812px;
+        box-shadow: 0px 6px 50px #0000001a !important;
+      }
+      .col3Width {
+        width: 391px;
+        box-shadow: 0px 6px 50px #0000001a !important;
+      }
+    }
+  }
+}
+
+.popOver {
+  width: 284px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+  padding: 35px 28px;
+  .displayNone{
+    display: none !important;
+  }
+  div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+    cursor: pointer;
+    margin-bottom: 40px;
+    p {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 18px;
+      letter-spacing: 0;
+      line-height: 27px;
+    }
+  }
+  :last-child {
+    margin-bottom: 0px;
+  }
+}
+
+.campaignPendingContainer {
+  height: 316px;
+  width: 813px;
+  border-radius: 10px;
+  background-color: #7b5dd9;
+  color: $white;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 32px 41px 20px 35px;
+  h1 {
+    font-size: 35px;
+    font-family: Poppins;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    svg {
+      height: 32px;
+      width: 32px;
+    }
+  }
+  p {
+    font-size: 20px;
+  }
+  button {
+    margin-top: 80px;
+    height: 44px;
+    width: 117px;
+    border-radius: 100px;
+    background-color: $white;
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 26px;
+  }
+}
+
+.CampaignHeading {
+  display: flex;
+  flex-direction: row;
+  gap: 21.5px;
+  align-items: center;
+  margin-bottom: 51px !important;
+  margin-top: 43px;
+  span {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 50px;
+    cursor: pointer;
+  }
+}
+
+.x {
+  width: 100%;
+  padding: 27px 27px 27px 27px;
+  svg {
+    float: right;
+    height: 27px;
+    width: 27px;
+  }
+}
+
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .mainContainer {
+      > * {
+        &:not(:last-child) {
+          margin-bottom: 30px !important;
+        }
+      }
+      .CampaignHeading {
+        margin-bottom: 51px !important;
+      }
+    }
+    .campaignStatus {
+      > * {
+        &:not(:last-child) {
+          margin-right: 20px !important;
+        }
+      }
+    }
+    .influencerSocial {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+    .popOver div {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+    .CampaignHeading {
+      > * {
+        &:not(:last-child) {
+          margin-right: 21.5px !important;
+        }
+      }
+    }
+    .campaignPendingContainer h1 {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.popOverContainer {
+  width: 206px;
+  background-color: #ffffff;
+  box-shadow: 0 3px 10px 0 rgba(0, 0, 0, 0.16);
+}
+
+.innerPopOver {
+  padding: 15px;
+}
+
+.heading {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 18px;
+}
+.brandDropDown {
+  margin-right: 5px !important;
+  display: flex;
+  cursor: pointer;
+}
+.brandDropDownSVG {
+  margin-left: 5px;
+}
+.brandContainter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 15px 0px;
+  cursor: pointer;
+  .brandImage {
+    height: 34px;
+    width: 34px;
+  }
+  span {
+    color: #000000;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 21px;
+    width: 121px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .brandContainter {
+      > * {
+        &:not(:last-child) {
+          margin-right: 8px !important;
+        }
+      }
+    }
+  }
+}
+
+.dropDownCustomizeSvg {
+  svg {
+    margin-left: 5px;
+  }
+}

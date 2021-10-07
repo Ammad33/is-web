@@ -1,0 +1,26 @@
+.brandContainter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 2.5em;
+  margin-top: 1em;
+  img {
+    height: 50px !important;
+    width: 152px !important;
+  }
+  span {
+    font-weight: 500;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .brandContainter {
+      > * {
+        &:not(:last-child) {
+          margin-right: 8px !important;
+        }
+      }
+    }
+  }
+}

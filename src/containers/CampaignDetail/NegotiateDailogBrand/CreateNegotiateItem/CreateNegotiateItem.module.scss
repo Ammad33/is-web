@@ -1,0 +1,180 @@
+.container {
+	border-radius: 10px;
+	background-color: #ffffff;
+	box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+	padding: 5px 41px 20px 35px;
+	margin-top: 30px !important;
+	display: flex;
+
+	.secondContainer {
+		display: flex !important;
+		align-items: flex-start !important;
+		justify-content: space-between !important;
+		width: 100%;
+		margin-top: 10px;
+	}
+
+	.radioContainer {
+		// display: flex !important;
+		justify-content: space-between !important;
+		gap: 18px;
+
+	}
+
+	.valueContainer {
+		display: flex !important;
+		align-items: center !important;
+		width: 100%;
+		justify-content: flex-end !important;
+		margin-top: 30px;
+
+
+		.endDate {
+			width: 156px;
+		}
+
+		.startDate {
+			width: 156px;
+		}
+	}
+
+	.radioActive {
+		border: 1px solid #7b5cd9;
+		border-radius: 4px;
+		padding: 3px 25px 3px 25px;
+		background-color: #EEEBF5;
+		color: #7B5CD9;
+		width: 156px;
+	}
+
+	.radioInActive {
+		border-radius: 4px;
+		border: 1px solid #939393;
+		padding: 3px 25px 3px 25px;
+		color: #939393;
+		width: 156px;
+	}
+
+	.radioActive>div>label>span>span {
+		color: #7B5CD9;
+	}
+
+	.radioInActive>div>label>span>span {
+		color: #939393;
+	}
+
+	.radioActive>div>label:nth-child(2) {
+		color: #7B5CD9;
+		font-family: Poppins !important;
+		font-size: 20px !important;
+		font-weight: 500 !important;
+		letter-spacing: 0 !important;
+		line-height: 25px !important;
+
+	}
+
+	.reOpen {
+		color: #3481EF;
+		font-family: Poppins;
+		font-size: 16px;
+		font-weight: 500;
+		letter-spacing: 0;
+		line-height: 25px;
+		cursor: pointer;
+		justify-content: flex-end;
+		display: flex;
+	}
+
+
+
+	.Heading {
+		padding: 0px !important;
+
+		.headingText {
+			margin-bottom: 45px !important;
+		}
+
+		p {
+			color: #000000;
+			font-family: Poppins;
+			font-size: 17px;
+			font-weight: 500;
+			letter-spacing: 0;
+			line-height: 26px;
+		}
+
+		.timeLineIcon {
+			border-radius: 99999999px;
+			box-sizing: border-box;
+			height: 11px;
+			width: 11px;
+			border: 1px solid #3481EF;
+			background-color: #3481EF;
+		}
+
+		.timeLineItems {
+			color: #000000;
+			font-family: "Poppins";
+			font-size: 15px;
+			letter-spacing: 0;
+			line-height: 0px;
+			align-items: center;
+		}
+
+		.timeLineItemsDisabled {
+			color: #939393;
+			font-family: "Poppins";
+			font-size: 16px;
+			font-weight: 300;
+			letter-spacing: 0;
+			line-height: 0px;
+			align-items: center;
+
+		}
+	}
+
+	.messageField {
+		&>label {
+			color: #7e7e7e !important;
+			line-height: 20px !important;
+		}
+
+	}
+
+	.marginbottomSelect {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+	}
+
+	.displayNone {
+		display: none !important;
+	}
+
+	.inputendornment {
+		cursor: pointer;
+	}
+
+	.dropDownCustomizeSvg {
+		svg {
+			margin-left: -33px;
+			margin-right: 20px;
+		}
+	}
+
+	.inActive {
+		color: #717171;
+		font-family: Poppins;
+		font-size: 16px;
+		letter-spacing: 0;
+		line-height: 25px;
+	}
+
+	.active {
+		color: #000000;
+		font-family: Poppins;
+		font-size: 16px;
+		letter-spacing: 0;
+		line-height: 25px;
+	}
+}

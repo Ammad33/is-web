@@ -1,0 +1,85 @@
+@import "../../../../variable.module.scss";
+.editContact {
+  width: 838px !important;
+  max-width: 838px !important;
+  max-height: 523px !important;
+  height: 523px !important;
+  border-radius: 20px !important;
+  background-color: $white !important;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1) !important;
+
+  h6 {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 23px;
+    font-weight: 500 !important;
+    letter-spacing: 0;
+    line-height: 34px;
+    margin: 0px;
+    margin-bottom: 48px;
+  }
+
+  .or {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+  }
+
+  .content {
+    height: 100%;
+    padding: 38px 38px 5px 38px;
+  }
+
+  .element {
+    margin-bottom: 30px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 96px;
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 -6px 50px 0 rgba(0, 0, 0, 0.1);
+    margin-top: 8px;
+    padding: 0px 36px 0px 38px;
+    span {
+      color: $dark1;
+      font-family: Poppins;
+      font-size: 19px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 29px;
+      cursor: pointer;
+    }
+
+    button {
+      height: 52px;
+      width: 172px;
+      border-radius: 100px;
+      background-color: #cccccc;
+      color: #959595;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0;
+      font-family: Poppins;
+      font-size: 19px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 29px;
+      text-align: center;
+      height: 52px;
+      width: 172px;
+      outline: none;
+      border: none;
+      :active {
+        outline: none;
+      }
+    }
+  }
+}

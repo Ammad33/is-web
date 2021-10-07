@@ -1,0 +1,75 @@
+@import "../../../../variable.module.scss";
+
+.mainContainer {
+  p {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 27px;
+  }
+
+  .contentContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 58px auto;
+    p {
+      margin-bottom: 50px;
+    }
+
+    .shopifyLogo {
+      height: 50px;
+      width: 175px;
+    }
+
+    .inputField {
+      flex: 0 0 360px;
+    }
+
+    .storeSync {
+      display: flex;
+      align-items: center;
+      font-weight: 500;
+      cursor: pointer;
+    }
+
+    .inputendornmentCheck {
+      color: $primary1 !important;
+    }
+    .fieldsAndAction {
+      width: 362px !important;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      &.savedContainer {
+        flex-direction: row !important;
+        width: 600px !important;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .contentContainer {
+      > * {
+        &:not(:last-child) {
+          margin-bottom: 30px !important;
+        }
+      }
+    }
+    .fieldsAndAction {
+      > * {
+        &:not(:last-child) {
+          margin-bottom: 30px !important;
+        }
+      }
+    }
+  }
+}
+.errorMessageStyle {
+  color: red !important;
+}

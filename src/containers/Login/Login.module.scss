@@ -1,0 +1,111 @@
+@import "../../variable.module.scss";
+.signinContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 496px;
+  .heading {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 50px;
+    margin-bottom: 30px;
+  }
+  .actionsContainer {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    button {
+      width: 172px;
+      height: 53px;
+      border-radius: 25px;
+      font-size: 19px;
+      font-weight: 500;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-transform: capitalize;
+    }
+  }
+  .socialContainers {
+    display: flex;
+    gap: 20px;
+    margin-top: 46px;
+.logoDiv{
+  cursor: pointer;
+}
+    div {
+      width: 143px;
+      height: 108px;
+      border-radius: 13px;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      border: 1px solid $dark2;
+      svg {
+        height: 56px;
+        width: 56px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  @media not all and (min-resolution: 0.001dpcm) {
+    @supports (-webkit-appearance: none) {
+      > * {
+        &:not(:last-child) {
+          margin-bottom: 30px !important;
+        }
+      }
+      .socialContainers {
+        > * {
+          &:not(:last-child) {
+            margin-right: 20px !important;
+          }
+        }
+      }
+      .actionsContainer {
+        > * {
+          &:not(:last-child) {
+            margin-right: 25px !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+.error {
+  color: red;
+}
+
+.logOut {
+  color: #21b2ed;
+}
+
+.inputendornment {
+  cursor: pointer;
+}
+
+.line {
+  display: flex;
+  margin-top: 40px;
+}
+
+.line2 {
+  width: 148px;
+  height: 13px;
+  border-bottom: 1px solid #cccccc;
+  text-align: center;
+}
+.lineText {
+  font-size: 16px;
+  padding-left: 25px;
+  padding-right: 20px;
+  font-family: Poppins;
+  letter-spacing: 0;
+  line-height: 25px;
+}

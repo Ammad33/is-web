@@ -1,0 +1,25 @@
+@import "../../../variable.module.scss";
+.addDeliverable {
+  color: $dark1;
+  font-family: Poppins;
+  font-size: 16px;
+  letter-spacing: 0;
+  line-height: 25px;
+  outline: none;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+  padding: 0px;
+}
+.mainContainer1 {
+  padding-top: 8px;
+}
+
+.dropDownCustomizeSvg {
+  svg {
+    margin-left: -36px;
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,194 @@
+@import "../../../variable.module.scss";
+
+.actionsContainer {
+  .accountDeactivationContainer {
+    margin-bottom: 20px;
+
+    .deleteTitle {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .deleteAccountTextAndButton {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .accountDeletionContainer {
+    margin-bottom: 100px;
+
+    .deleteTitle {
+      font-size: 18px;
+      font-weight: 500;
+    }
+
+    .deleteAccountTextAndButton {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  .saveContainer {
+    margin-bottom: 10px;
+    text-align: right;
+
+    .inActiveButton {
+      background-color: #cccccc;
+      color: #959595;
+    }
+
+    .nextButton {
+      background-color: $dark1;
+      color: $white;
+      border-radius: 100px;
+      padding: 8px 40px;
+      outline: none;
+      font-family: Poppins;
+      font-size: 19px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 29px;
+      border: none;
+    }
+  }
+}
+.errorMessage {
+  color: red;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.inputendornment {
+  cursor: pointer;
+}
+
+.DeactivateButton {
+  text-transform: initial !important;
+  color: #db7474 !important;
+  font-family: Poppins !important;
+  font-size: 19px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  line-height: 29px !important;
+  background-color: white !important;
+}
+
+.brandContainter {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 1.5em;
+
+  .brandImage {
+    height: 92px;
+    width: 90px;
+    display: flex;
+  }
+
+  input {
+    color: #3481ef;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 25px;
+    cursor: pointer;
+  }
+}
+
+button {
+  background: transparent;
+  font-size: 17px;
+  line-height: 26px;
+  padding: 8px 16px;
+  font-family: "Poppins";
+  cursor: pointer;
+
+  :focus {
+    outline: none;
+  }
+}
+
+button:active,
+:focus {
+  outline: none;
+}
+
+.active {
+  border: none !important;
+  background-color: $dark1 !important;
+  color: $white;
+  padding: 8px 16px;
+  border-radius: 100px;
+  font-size: 15px;
+  line-height: 23px;
+  outline: none;
+  font-family: "Poppins";
+}
+
+.notActive {
+  height: 21px;
+  width: 54px;
+  margin-left: 3px;
+  border: none !important;
+  border-radius: 100px;
+  outline: none;
+  color: #000000;
+  font-family: "Poppins";
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 23px;
+  text-align: center;
+}
+
+.verifiedEmail {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: -12px !important;
+  p {
+    margin-right: 6px !important;
+    display: flex;
+    align-items: center;
+    color: #7b5cd9;
+    font-family: Poppins;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 21px;
+  }
+  svg {
+    margin-left: 10px;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .brandContainter {
+      > * {
+        &:not(:last-child) {
+          margin-right: 8px !important;
+        }
+      }
+    }
+  }
+}
+.heroLabel {
+  color: #3481ef !important;
+  font-family: Poppins !important;
+  font-size: 14px !important;
+  padding: 5px 10px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0 !important;
+  line-height: 21px !important;
+  cursor: pointer !important;
+}
+.visibilityHidden {
+  visibility: hidden !important;
+}
+.displayNone {
+  visibility: hidden !important;
+  display: none !important;
+}

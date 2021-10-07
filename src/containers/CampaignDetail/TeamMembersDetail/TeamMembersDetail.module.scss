@@ -1,0 +1,43 @@
+.mainContainer {
+  padding: 0px 40px;
+  overflow-y: scroll;
+  .membersContainer {
+    margin-top: 20px;
+  }
+}
+.listItem {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  span {
+    flex: 1;
+  }
+}
+
+.memberHeading {
+  color: #000000;
+  font-family: Poppins;
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 0;
+  line-height: 25px;
+  margin-top: 63px;
+  margin-bottom: 23px;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .listItem {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+}
+.addTeamMembers{
+  margin-Top: 35px !important;
+}

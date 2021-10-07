@@ -1,0 +1,28 @@
+@import "../../../variable.module.scss";
+.mainContainer {
+  height: 454px;
+  width: 391px;
+  border-radius: 10px;
+  background-color: $white;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  padding: 32px 41px 20px 35px;
+  svg {
+    cursor: pointer;
+  }
+  .headerContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .section {
+    h5 {
+      font-family: Poppins;
+      font-weight: 500;
+      margin: 25px 0 0 0;
+    }
+  }
+  .BudgetAndConversion1 {
+    display: flex !important;
+    justify-content: space-between !important;
+  }
+}

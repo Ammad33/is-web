@@ -1,0 +1,50 @@
+@import "../../../variable.module.scss";
+
+.mainContainer {
+  padding: 0 10px;
+  margin-top: 35px;
+  padding-top: 8px !important;
+  .title {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 20px;
+    letter-spacing: 0;
+    line-height: 30px;
+    text-align: center;
+  }
+  .optionsContainer {
+    margin-top: 50px;
+    padding: 0 20px;
+    .optionsItem {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      padding-left: 50px;
+      svg {
+        color: $primary1;
+        cursor: pointer;
+        width: 31px !important;
+        height: 31px !important;
+      }
+      .disabled {
+        color: #939393 !important;
+      }
+      span {
+        cursor: pointer;
+        padding-left: 0px !important;
+      }
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .optionsItem {
+      > * {
+        &:not(:last-child) {
+          margin-right: 10px !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,188 @@
+@import "../../../variable.module.scss";
+
+.addMember {
+  height: 627px !important;
+  width: 972px !important;
+  max-width: 838px !important;
+  border-radius: 20px !important;
+  background-color: $white !important;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1) !important;
+
+  h6 {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 30px;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .or {
+    color: #000000;
+    font-family: Poppins;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+  }
+
+  .content {
+    padding: 38px 38px 5px 38px;
+  }
+
+  .element {
+    margin-bottom: 30px;
+  }
+
+  .errorElement {
+    margin-bottom: 10px;
+  }
+
+  .footerContainer {
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    .footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 96px;
+      width: 100%;
+      border-radius: 0 0 20px 20px;
+      background-color: #ffffff;
+      box-shadow: 0 -6px 50px 0 rgba(0, 0, 0, 0.1);
+      margin-top: 8px;
+      padding: 0px 36px 0px 38px;
+
+      span {
+        color: $dark1;
+        font-family: Poppins;
+        font-size: 19px;
+        font-weight: 500;
+        letter-spacing: 0;
+        line-height: 29px;
+        cursor: pointer;
+      }
+
+      div {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 38px;
+
+        .spandiv {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 15px !important;
+          cursor: pointer;
+
+          .circle {
+            box-sizing: border-box;
+            height: 31px;
+            width: 31px;
+            border: 1px solid #939393;
+            border-radius: 100px;
+          }
+
+          p {
+            color: $dark1;
+            font-family: Poppins;
+            font-size: 19px;
+            font-weight: 500;
+            letter-spacing: 0;
+            line-height: 29px;
+            cursor: pointer;
+          }
+        }
+
+        button {
+          background-color: $dark1 !important;
+          border-radius: 100px;
+          color: #ffffff;
+          font-family: Poppins;
+          font-size: 19px;
+          font-weight: 500;
+          letter-spacing: 0;
+          line-height: 29px;
+          text-align: center;
+          height: 52px;
+          width: 123px;
+          outline: none;
+          border: none;
+
+          :active {
+            outline: none;
+          }
+        }
+      }
+    }
+  }
+
+  .subHeadingContainer {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+    margin: 26px 0px 34px 0px;
+
+    svg {
+      height: 20px;
+      width: 20px;
+    }
+
+    button {
+      background-color: $dark1 !important;
+      border-radius: 100px;
+      color: #ffffff;
+      font-family: Poppins;
+      font-size: 15px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 23px;
+      text-align: center;
+      width: 87px;
+      outline: none;
+      border: none;
+
+      :active {
+        outline: none;
+      }
+    }
+  }
+}
+
+.errorText {
+  margin: 0px !important;
+  color: red;
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .footer div {
+      > * {
+        &:not(:last-child) {
+          margin-right: 38px !important;
+        }
+      }
+    }
+    .footer div .spandiv {
+      > * {
+        &:not(:last-child) {
+          margin-right: 15px !important;
+        }
+      }
+    }
+    .subHeadingContainer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 20px !important;
+        }
+      }
+    }
+  }
+}
+.influencerSocialAccount {
+  width: 750 !important;
+}

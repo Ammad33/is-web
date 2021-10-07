@@ -1,0 +1,68 @@
+@import "../../variable.module.scss";
+.mainContainer {
+  width: 380px !important;
+  padding: 33px 27px 0px 27px;
+  height: 100%;
+  overflow-y: scroll;
+  .Heading {
+    width: 100%;
+    p {
+      color: #000000;
+      font-family: Poppins;
+      font-size: 23px;
+      font-weight: bold;
+      letter-spacing: 0;
+      line-height: 34px;
+    }
+  }
+}
+
+.NotificationContainer {
+  background-color: #ffffff;
+  width: 324px;
+  margin: 16px 0px;
+
+  .notificationDay {
+    p {
+      margin-bottom: 12px;
+      color: #000000;
+      font-family: Poppins;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 18px;
+    }
+  }
+  .NotificationCardContainer {
+    border-radius: 10px !important;
+    overflow: hidden;
+    box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.loadMore {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+  background: #ffffff;
+  width: 100%;
+  padding: 10px 0px;
+  button {
+    padding: 18px 20px;
+    height: 31px;
+    width: 119px;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 23px;
+    color: #ffffff;
+    background: #000000;
+    border: none;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,89 @@
+.chatContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  overflow-y: scroll !important;
+  padding: 0px 45px;
+  height: auto;
+  height: calc(100% - 173px);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .myMessage {
+    display: flex;
+    align-self: flex-end;
+    gap: 8px;
+    span {
+      color: #939393;
+      font-family: Poppins;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 18px;
+      display: flex;
+      align-self: flex-end;
+    }
+    div {
+      border-radius: 10px;
+      background-color: #7b5cd9;
+      max-width: 265px;
+      padding: 15px;
+      color: #ffffff;
+      font-family: Poppins;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 19px;
+    }
+  }
+
+  .yourMessage {
+    display: flex;
+    align-self: flex-start;
+    gap: 8px;
+    span {
+      color: #939393;
+      font-family: Poppins;
+      font-size: 12px;
+      letter-spacing: 0;
+      line-height: 18px;
+      display: flex;
+      align-self: flex-end;
+    }
+    .meesageDiv {
+      display: inline-block;
+      border-radius: 10px;
+      background-color: #efefef;
+      max-width: 265px;
+      padding: 15px;
+      color: #000000;
+      font-family: Poppins;
+      font-size: 16px;
+      letter-spacing: 0;
+      line-height: 19px;
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .chatContainer {
+      > * {
+        &:not(:last-child) {
+          margin-bottom: 20px !important;
+        }
+      }
+    }
+    .myMessage {
+      > * {
+        &:not(:last-child) {
+          margin-right: 8px !important;
+        }
+      }
+    }
+    .yourMessage {
+      > * {
+        &:not(:last-child) {
+          margin-right: 8px !important;
+        }
+      }
+    }
+  }
+}

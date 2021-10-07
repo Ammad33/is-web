@@ -1,0 +1,111 @@
+@import "../../variable.module.scss";
+
+.postsContainer {
+  max-width: 1235px;
+  min-width: 1235px;
+  padding-bottom: 15px;
+  margin: auto;
+}
+
+.postHeadingContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51px;
+    width: 177px;
+    border-radius: 100px;
+    background-color: $dark1;
+    color: $white;
+    font-family: Poppins;
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 23px;
+    border: none;
+    outline: none;
+    :focus {
+      outline: none;
+    }
+  }
+}
+
+.postHeading {
+  display: flex;
+  flex-direction: row;
+  gap: 21.5px;
+  align-items: center;
+  margin-bottom: 51px;
+  margin-top: 43px;
+  span {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 50px;
+    cursor: pointer;
+  }
+}
+
+.postsGrid {
+  display: flex;
+  flex-direction: row;
+  gap: 35px;
+}
+
+.imageContainer {
+  margin-top: 55px;
+  .elemtdiv {
+    box-sizing: border-box;
+    height: 472px;
+    width: 273px;
+    border: 1px solid #cccccc;
+    border-radius: 10px;
+    margin-top: 0px !important;
+    margin-bottom: 21px !important;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  p {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+  }
+  .link {
+    color: #3481ef;
+    font-family: Poppins;
+    font-size: 16px;
+    letter-spacing: 0;
+    line-height: 25px;
+    word-break: break-all;
+    width: 275px;
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .postHeading {
+      > * {
+        &:not(:last-child) {
+          margin-right: 21.5px !important;
+        }
+      }
+    }
+    .postsGrid {
+      > * {
+        &:not(:last-child) {
+          margin-right: 35px !important;
+        }
+      }
+    }
+  }
+}

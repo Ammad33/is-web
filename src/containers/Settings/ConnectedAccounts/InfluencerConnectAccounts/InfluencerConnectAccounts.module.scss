@@ -1,0 +1,37 @@
+@import "../../../../variable.module.scss";
+.influencerSocialAccountsContainer {
+  margin: 30px 0px;
+  .influencerSocialAccountItem {
+    .title {
+      font-size: 16px;
+      font-weight: 500;
+      margin: 10px 0px;
+    }
+    .contentContainer {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      .inputField {
+        flex: 0 0 360px;
+      }
+      .inputendornmentCheck {
+        color: $primary1 !important;
+      }
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .contentContainer {
+      > * {
+        &:not(:last-child) {
+          margin-right: 20px !important;
+        }
+      }
+    }
+  }
+}
+.influencerSocialAccount {
+  margin-top: 25px !important;
+}

@@ -1,0 +1,78 @@
+@import "./../../variable.module.scss";
+.cDialog {
+  max-width: 546px !important;
+  width: 546px !important;
+  border-radius: 20px !important;
+  background-color: #ffffff !important;
+  box-shadow: 0 6px 50px 0 rgba(0, 0, 0, 0.1) !important;
+
+  .cDialogContent {
+    padding: 47px 49px 0px 49px !important;
+    .cDialogDescription {
+      color: #000000;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 31px;
+      margin-top: 20px !important;
+    }
+    span {
+      color: #000000;
+      font-family: Poppins;
+      font-size: 22px;
+      font-weight: 600;
+      letter-spacing: 0;
+    }
+  }
+  .cDialogActions {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    padding: 38px;
+    .confirm {
+			white-space: nowrap; // for text to stay in signle line
+      color: #000000;
+      font-family: Poppins;
+      font-size: 18px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 31px;
+      text-transform: capitalize;
+    }
+    .addCampaignSave {
+      box-sizing: border-box;
+      height: 52px;
+      width: 139px;
+      border: 2px solid #000000;
+      border-radius: 100px;
+      color: black;
+    }
+    button {
+      border-radius: 25px;
+      color: #ffffff;
+      font-family: Poppins;
+      font-size: 19px;
+      font-weight: 500;
+      letter-spacing: 0;
+      line-height: 29px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .cDialogActions {
+      > * {
+        &:not(:last-child) {
+          margin-right: 20px !important;
+        }
+      }
+    }
+  }
+}

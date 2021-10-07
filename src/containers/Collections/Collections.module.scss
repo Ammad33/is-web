@@ -1,0 +1,127 @@
+@import "../../variable.module.scss";
+
+.collectionContainer {
+  max-width: 1235px;
+  min-width: 1235px;
+  padding-bottom: 15px;
+  margin: auto;
+}
+
+.collectionHeading {
+  display: flex;
+  flex-direction: row;
+  gap: 21.5px;
+  align-items: center;
+  margin-bottom: 51px;
+  margin-top: 43px;
+  span {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: 0;
+    line-height: 50px;
+    cursor: pointer;
+  }
+}
+
+.collectionSubContent {
+  margin-top: 51px;
+  p {
+    color: $dark1;
+    margin: 0px !important;
+  }
+  h6 {
+    letter-spacing: 0px;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+    color: $dark1;
+    margin: 0px;
+    padding: 0px;
+    margin-bottom: 16px;
+  }
+}
+
+.containerRow {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.boxContainer {
+  .box {
+    height: 145px;
+    width: 140px;
+    background-color: #e8e8e8;
+    background: #e8e8e8 0% 0% no-repeat padding-box;
+    border-radius: 20px;
+    margin-bottom: 8px;
+  }
+  .boxItem {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 14px;
+    letter-spacing: 0;
+    line-height: 21px;
+    width: 140px;
+    white-space: pre;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+  }
+  .boxPrice {
+    color: $dark1;
+    font-family: Poppins;
+    font-size: 11px;
+    letter-spacing: 0;
+    line-height: 17px;
+  }
+}
+
+.conatianer {
+  margin-bottom: 50px;
+  .detailSubContent {
+    margin-top: 24px;
+    h6 {
+      letter-spacing: 0px;
+      font-size: 18px;
+      line-height: 27px;
+      font-weight: 500;
+      color: $dark1;
+      margin: 0px;
+      padding: 0px;
+    }
+    p {
+      margin: 0px;
+      padding: 0px;
+      font: normal normal normal 14px/21px Poppins;
+      letter-spacing: 0px;
+      color: $dark1;
+    }
+  }
+}
+
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    .collectionHeading {
+      > * {
+        &:not(:last-child) {
+          margin-right: 21.5px !important;
+        }
+      }
+    }
+    .containerRow {
+      > * {
+        &:not(:last-child) {
+          margin-right: 30px !important;
+        }
+      }
+    }
+  }
+}
+.errorMessageContainer {
+  padding: 16px !important;
+  color: red !important;
+}
